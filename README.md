@@ -37,9 +37,9 @@ No i daj znać, jeśli na coś Ci się to przydało!
 
 ---
 
-**Kontakt:** [Marcin Krzanicki na LinkedIn](https://www.linkedin.com/in/marcinkrzanicki/) _(otwiera się w nowym oknie)_.
+**Kontakt:** [Marcin Krzanicki na LinkedIn](https://www.linkedin.com/in/marcinkrzanicki/)
 
 ---
 
 **Licencja:**  
-Narzędzie objęte jest licencją [Creative Commons Uznanie autorstwa – Na tych samych warunkach 4.0 Międzynarodowa (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.pl) _(otwiera się w nowym oknie)_.
+Narzędzie objęte jest licencją [Creative Commons Uznanie autorstwa – Na tych samych warunkach 4.0 Międzynarodowa (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.pl)
