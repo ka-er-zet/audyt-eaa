@@ -1,0 +1,461 @@
+<section id="audit-c8" class="audit-section">
+        <h2>Audyt Klauzuli 8: Sprzęt (Hardware)</h2>
+        
+        <h3>C.8.1 Wymagania ogólne</h3>
+        <div class="audit-item informative">
+            <h4>C.8.1.1 Ogólne</h4>
+            <p>Klauzula 8.1.1 jest doradcza i nie zawiera wymagań do testowania.</p>
+        </div>
+        
+        <h4>C.8.1.2 Standardowe złącza</h4>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK zapewnia punkty podłączenia urządzeń wejścia lub wyjścia użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol>
+                    <li>Sprawdź, czy jeden typ połączenia jest zgodny z branżowym, niewłasnościowym formatem.</li>
+                    <li>Sprawdź, czy jeden typ połączenia jest zgodny z branżowym, niewłasnościowym formatem poprzez użycie komercyjnie dostępnych adapterów.</li>
+                </ol>
+                <p><strong>UWAGA:</strong> Połączenia mogą być fizyczne lub bezprzewodowe.</p>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.8.1.2 Standardowe złącza:</legend>
+                <div><label><input type="radio" name="res-c8-1-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 lub 2 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c8-1-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenia 1 i 2 są fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c8-1-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c8-1-2">Uwagi:</label><textarea id="notes-c8-1-2"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h4>C.8.1.3 Kolor</h4>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>Aspekty sprzętowe TIK przekazują informacje wizualne za pomocą kodowania kolorami jako sposobu na wskazanie działania, wywołanie odpowiedzi lub rozróżnienie elementu wizualnego.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy zapewniono alternatywną formę kodowania wizualnego.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.8.1.3 Kolor:</legend>
+                <div><label><input type="radio" name="res-c8-1-3" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c8-1-3" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c8-1-3" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c8-1-3">Uwagi:</label><textarea id="notes-c8-1-3"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h3>C.8.2 Produkty sprzętowe z wyjściem mowy</h3>
+        
+        <h4>C.8.2.1 Wzmocnienie głośności mowy</h4>
+        
+        <h5>C.8.2.1.1 Zakres głośności mowy</h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection based on measurement data</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>Sprzęt TIK ma wyjście mowy.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol>
+                    <li>Sprawdź, czy TIK jest certyfikowany zgodnie z ANSI/TIA-4965 [i.2].</li>
+                    <li>Zmierz poziom (w dB) wyjścia mowy przy najniższym ustawieniu głośności.</li>
+                    <li>Zmierz poziom (w dB) wyjścia mowy przy najwyższym ustawieniu głośności.</li>
+                    <li>Sprawdź, czy zakres między 2 a 3 jest większy lub równy 18 dB.</li>
+                </ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.8.2.1.1 Zakres głośności mowy:</legend>
+                <div><label><input type="radio" name="res-c8-2-1-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 lub 4 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c8-2-1-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 i 4 są fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c8-2-1-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c8-2-1-1">Uwagi:</label><textarea id="notes-c8-2-1-1"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h5>C.8.2.1.2 Przyrostowa kontrola głośności</h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection based on measurement data</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>Sprzęt TIK ma wyjście mowy.</li>
+                    <li>Kontrola głośności jest przyrostowa.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol>
+                    <li>Zmierz poziom (w dB) wyjścia mowy przy najniższym ustawieniu głośności.</li>
+                    <li>Sprawdź, czy jeden pośredni krok zapewnia poziom o 12 dB wyższy niż najniższy poziom zmierzony w kroku 1.</li>
+                </ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.8.2.1.2 Przyrostowa kontrola głośności:</legend>
+                <div><label><input type="radio" name="res-c8-2-1-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 2 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c8-2-1-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 2 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c8-2-1-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c8-2-1-2">Uwagi:</label><textarea id="notes-c8-2-1-2"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h4>C.8.2.2 Sprzężenie magnetyczne</h4>
+        
+        <h5>C.8.2.2.1 Urządzenia stacjonarne</h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection based on measurement data</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>Sprzęt TIK jest stacjonarnym urządzeniem komunikacyjnym z wyjściem audio, które normalnie trzyma się przy uchu.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol>
+                    <li>Sprawdź, czy TIK jest certyfikowany zgodnie z TIA-1083-A [i.24].</li>
+                    <li>Pomiary są wykonane zgodnie z ETSI ES 200 381-1 [2], co dowodzi, że wymagania zdefiniowane w tym standardzie są spełnione.</li>
+                    <li>TIK posiada symbol "T" określony w ETSI ETS 300 381 [1].</li>
+                </ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.8.2.2.1 Urządzenia stacjonarne:</legend>
+                <div><label><input type="radio" name="res-c8-2-2-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 lub 2 jest prawdziwe ORAZ sprawdzenie 3 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c8-2-2-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenia 1 i 2 są fałszywe LUB sprawdzenie 3 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c8-2-2-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c8-2-2-1">Uwagi:</label><textarea id="notes-c8-2-2-1"></textarea></div>
+            </fieldset>
+            
+        </div>
+
+        <h5>C.8.2.2.2 Urządzenia komunikacji bezprzewodowej</h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection based on measurement data</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>Sprzęt TIK jest bezprzewodowym urządzeniem komunikacyjnym, które normalnie trzyma się przy uchu.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol>
+                    <li>Sprawdź, czy TIK jest certyfikowany zgodnie z ANSI/IEEE C63.19 [i.1].</li>
+                    <li>Sprawdź, czy TIK zapewnia środek sprzężenia magnetycznego z technologiami słuchowymi, który spełnia wymagania ETSI ES 200 381-2 [3].</li>
+                </ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.8.2.2.2 Urządzenia komunikacji bezprzewodowej:</legend>
+                <div><label><input type="radio" name="res-c8-2-2-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 lub 2 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c8-2-2-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenia 1 i 2 są fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c8-2-2-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c8-2-2-2">Uwagi:</label><textarea id="notes-c8-2-2-2"></textarea></div>
+            </fieldset>
+            
+        </div>
+
+        <h3>C.8.3 TIK stacjonarne</h3>
+        <div class="audit-item informative">
+            <h4>C.8.3.0 Ogólne</h4>
+            <p>Klauzula 8.3.0 jest doradcza i nie zawiera wymagań do testowania.</p>
+        </div>
+        
+        <h4>C.8.3.1 Zasięg do przodu lub boczny</h4>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK jest TIK-iem stacjonarnym.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol>
+                    <li>Sprawdź, czy TIK jest zgodny z klauzulą 8.3.2.2.</li>
+                    <li>Sprawdź, czy TIK jest zgodny z klauzulą 8.3.2.3.</li>
+                </ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.8.3.1 Zasięg do przodu lub boczny:</legend>
+                <div><label><input type="radio" name="res-c8-3-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 lub 2 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c8-3-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenia 1 i 2 są fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c8-3-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c8-3-1">Uwagi:</label><textarea id="notes-c8-3-1"></textarea></div>
+            </fieldset>
+            
+        </div>
+
+        <h4>C.8.3.2 Zasięg do przodu</h4>
+        
+        <h5>C.8.3.2.1 Wysoki zasięg do przodu bez przeszkód</h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection and measurement</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK jest TIK-iem stacjonarnym.</li>
+                    <li>Żadna część TIK-u stacjonarnego nie utrudnia zasięgu do przodu.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy co najmniej jeden z każdego typu części obsługiwalnej znajduje się nie wyżej niż 1200 mm (48 cali) nad podłogą przestrzeni dostępowej.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.8.3.2.1 Wysoki zasięg do przodu bez przeszkód:</legend>
+                <div><label><input type="radio" name="res-c8-3-2-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c8-3-2-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c8-3-2-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c8-3-2-1">Uwagi:</label><textarea id="notes-c8-3-2-1"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h5>C.8.3.2.2 Niski zasięg do przodu bez przeszkód</h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection and measurement</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK jest TIK-iem stacjonarnym.</li>
+                    <li>Żadna część TIK-u stacjonarnego nie utrudnia zasięgu do przodu.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy co najmniej jeden z każdego typu części obsługiwalnej znajduje się nie niżej niż 380 mm (15 cali) nad podłogą przestrzeni dostępowej.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.8.3.2.2 Niski zasięg do przodu bez przeszkód:</legend>
+                <div><label><input type="radio" name="res-c8-3-2-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c8-3-2-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c8-3-2-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c8-3-2-2">Uwagi:</label><textarea id="notes-c8-3-2-2"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h4>C.8.3.3 Zasięg boczny</h4>
+        
+        <h5>C.8.3.3.1 Wysoki zasięg boczny bez przeszkód</h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection and measurement</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK jest TIK-iem stacjonarnym.</li>
+                    <li>Zasięg boczny jest niezakłócony lub jest zakłócony przez element będący integralną częścią TIK-u stacjonarnego, który ma mniej niż 510 mm (20 cali).</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy wysoki zasięg boczny do co najmniej jednego z każdego typu części obsługiwalnej nie jest wyższy niż 1220 mm (48 cali) nad podłogą przestrzeni dostępowej.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.8.3.3.1 Wysoki zasięg boczny bez przeszkód:</legend>
+                <div><label><input type="radio" name="res-c8-3-3-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c8-3-3-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c8-3-3-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c8-3-3-1">Uwagi:</label><textarea id="notes-c8-3-3-1"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h5>C.8.3.3.2 Niski zasięg boczny bez przeszkód</h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection and measurement</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK jest TIK-iem stacjonarnym.</li>
+                    <li>Zasięg boczny jest niezakłócony lub jest zakłócony przez element będący integralną częścią TIK-u stacjonarnego, który ma mniej niż 510 mm (20 cali).</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy niski zasięg boczny do co najmniej jednego z każdego typu części obsługiwalnej jest większy lub równy 380 mm (15 cali) nad podłogą przestrzeni dostępowej.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.8.3.3.2 Niski zasięg boczny bez przeszkód:</legend>
+                <div><label><input type="radio" name="res-c8-3-3-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c8-3-3-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c8-3-3-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c8-3-3-2">Uwagi:</label><textarea id="notes-c8-3-3-2"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h4>C.8.3.4 Wolna przestrzeń podłogowa</h4>
+        
+        <h5>C.8.3.4.1 Zmiana poziomu</h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection and measurement</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK jest TIK-iem stacjonarnym.</li>
+                    <li>Wewnątrz TIK znajduje się podłoga.</li>
+                    <li>Podłoga ma zmianę poziomu.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol>
+                    <li>Jeśli zmiana poziomu jest pochyła, sprawdź, czy ma nachylenie mniejsze niż 1:48.</li>
+                    <li>Jeśli występuje pionowa zmiana poziomu podłogi, sprawdź, czy jest mniejsza lub równa 6,4 mm.</li>
+                    <li>Jeśli występuje pionowa lub pochyła zmiana poziomu podłogi, sprawdź, czy nachylenie nie jest większe niż 1:2.</li>
+                </ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.8.3.4.1 Zmiana poziomu:</legend>
+                <div><label><input type="radio" name="res-c8-3-4-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1, 2 lub 3 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c8-3-4-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenia 1, 2 i 3 są fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c8-3-4-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1, 2 lub 3 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c8-3-4-1">Uwagi:</label><textarea id="notes-c8-3-4-1"></textarea></div>
+            </fieldset>
+            
+        </div>
+
+        <h5>C.8.3.4.2 Wolna przestrzeń podłogowa</h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection and measurement</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK jest TIK-iem stacjonarnym.</li>
+                    <li>Wewnątrz znajduje się obszar operacyjny.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy istnieje wolna przestrzeń podłogowa o minimalnych wymiarach prostokątnych 760 mm na jednej krawędzi i 1220 mm na drugiej.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.8.3.4.2 Wolna przestrzeń podłogowa:</legend>
+                <div><label><input type="radio" name="res-c8-3-4-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c8-3-4-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c8-3-4-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c8-3-4-2">Uwagi:</label><textarea id="notes-c8-3-4-2"></textarea></div>
+            </fieldset>
+            
+        </div>
+
+        <h4>C.8.3.5 Widoczność</h4>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection and measurement</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK jest TIK-iem stacjonarnym.</li>
+                    <li>Dostarczono jeden lub więcej ekranów.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy co najmniej jeden z każdego typu ekranu jest umieszczony tak, aby informacje na ekranie były czytelne z punktu znajdującego się 1015 mm (40 cali) nad środkiem podłogi obszaru operacyjnego.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.8.3.5 Widoczność:</legend>
+                <div><label><input type="radio" name="res-c8-3-5" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c8-3-5" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c8-3-5" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c8-3-5">Uwagi:</label><textarea id="notes-c8-3-5"></textarea></div>
+            </fieldset>
+            
+        </div>
+
+        <h4>C.8.3.6 Instrukcje instalacji</h4>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection and measurement</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK jest TIK-iem stacjonarnym.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol>
+                    <li>Sprawdź, czy udostępniono instrukcje instalacji.</li>
+                    <li>Sprawdź, czy instrukcje zawierają wskazówki, jak zainstalować TIK w sposób zapewniający zgodność wymiarów zainstalowanego TIK z klauzulami 8.3.2 do 8.3.4.</li>
+                    <li>Sprawdź, czy instrukcje informują, że instalatorzy powinni również uwzględnić obowiązujące wymagania dotyczące dostępności środowiska zbudowanego w odniesieniu do instalacji TIK.</li>
+                </ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.8.3.6 Instrukcje instalacji:</legend>
+                <div><label><input type="radio" name="res-c8-3-6" value="pass"> <strong>Zaliczone:</strong> Sprawdzenia 1, 2 i 3 są prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c8-3-6" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1, 2 lub 3 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c8-3-6" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c8-3-6">Uwagi:</label><textarea id="notes-c8-3-6"></textarea></div>
+            </fieldset>
+            
+        </div>
+
+        <h3>C.8.4 Mechanicznie obsługiwane części</h3>
+        
+        <h4>C.8.4.1 Klawisze numeryczne</h4>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK ma fizyczne klawisze numeryczne ułożone w 12-klawiszowym układzie klawiatury telefonicznej.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy klawisz z cyfrą pięć jest dotykowo odróżnialny od pozostałych klawiszy klawiatury.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.8.4.1 Klawisze numeryczne:</legend>
+                <div><label><input type="radio" name="res-c8-4-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c8-4-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c8-4-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c8-4-1">Uwagi:</label><textarea id="notes-c8-4-1"></textarea></div>
+            </fieldset>
+            
+        </div>
+
+        <h4>C.8.4.2 Obsługa części mechanicznych</h4>
+        
+        <h5>C.8.4.2.1 Sposób obsługi części mechanicznych</h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK ma części obsługiwalne, które wymagają chwytania, szczypania lub skręcania nadgarstka do obsługi.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy istnieje alternatywny, dostępny sposób obsługi, który nie wymaga tych działań.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.8.4.2.1 Sposób obsługi części mechanicznych:</legend>
+                <div><label><input type="radio" name="res-c8-4-2-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c8-4-2-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c8-4-2-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c8-4-2-1">Uwagi:</label><textarea id="notes-c8-4-2-1"></textarea></div>
+            </fieldset>
+            
+        </div>
+
+        <h5>C.8.4.2.2 Siła obsługi części mechanicznych</h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection and measurement</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK ma kontrolkę, która wymaga siły większej niż 22,2 N do obsługi.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy zapewniono dostępny alternatywny sposób obsługi, który wymaga siły mniejszej lub równej 22,2 N.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.8.4.2.2 Siła obsługi części mechanicznych:</legend>
+                <div><label><input type="radio" name="res-c8-4-2-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c8-4-2-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c8-4-2-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c8-4-2-2">Uwagi:</label><textarea id="notes-c8-4-2-2"></textarea></div>
+            </fieldset>
+            
+        </div>
+
+        <h4>C.8.4.3 Klucze, bilety i karty opłat</h4>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection and measurement</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK dostarcza klucze, bilety lub karty opłat, a ich orientacja jest ważna dla dalszego użytkowania.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy klucze, bilety lub karty opłat mają orientację, która jest dotykowo rozróżnialna.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.8.4.3 Klucze, bilety i karty opłat:</legend>
+                <div><label><input type="radio" name="res-c8-4-3" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c8-4-3" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c8-4-3" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c8-4-3">Uwagi:</label><textarea id="notes-c8-4-3"></textarea></div>
+            </fieldset>
+            
+        </div>
+
+        <h3>C.8.5 Dotykowe wskazanie trybu mowy</h3>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection and measurement</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK jest przeznaczony do użytku współdzielonego.</li>
+                    <li>Dostępne jest wyjście mowy.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy zapewniono dotykowe wskazanie sposobu inicjowania trybu mowy.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.8.5 Dotykowe wskazanie trybu mowy:</legend>
+                <div><label><input type="radio" name="res-c8-5" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c8-5" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c8-5" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c8-5">Uwagi:</label><textarea id="notes-c8-5"></textarea></div>
+            </fieldset>
+            
+        </div>
+    </section>

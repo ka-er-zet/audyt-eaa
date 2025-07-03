@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narzędzie wspomagające audyt zgodności z EN 301 549</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon-eaa.svg">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon-180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="icon-256.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+</head>
+<body>
+
+    <main>
+        <h1>Narzędzie wspomagające audytu zgodności z EN 301 549</h1>
+        <form id="selection-form">
+            <fieldset>
+                <legend>Wybierz klauzule do audytu</legend>
+                <label><input type="checkbox" name="clause" value="c5"> Klauzula 5: Wymagania ogólne</label>
+                <label><input type="checkbox" name="clause" value="c6"> Klauzula 6: Technologie informacyjno-komunikacyjne z dwukierunkową komunikacją głosową</label>
+                <label><input type="checkbox" name="clause" value="c7"> Klauzula 7: Technologie informacyjno-komunikacyjne z funkcjami wideo</label>
+                <label><input type="checkbox" name="clause" value="c8"> Klauzula 8: Sprzęt</label>
+                <label><input type="checkbox" name="clause" value="c9"> Klauzula 9: Strony internetowe</label>
+                <label><input type="checkbox" name="clause" value="c10"> Klauzula 10: Dokumenty inne niż internetowe</label>
+                <label><input type="checkbox" name="clause" value="c11"> Klauzula 11: Oprogramowanie</label>
+                <label><input type="checkbox" name="clause" value="c12"> Klauzula 12: Dokumentacja i usługi wsparcia</label>
+                <label><input type="checkbox" name="clause" value="c13"> Klauzula 13: Technologie informacyjno-komunikacyjne zapewniające dostęp do usług przekaźnikowych lub alarmowych</label>
+            </fieldset>
+            <button type="button" id="generate-btn">Generuj formularz audytu</button>
+        </form>
+
+        <div id="audit-container" aria-live="polite"></div>
+
+        <div id="audit-summary" style="display:none; margin: 2em 0; padding: 1em; border: 1px solid #b3d7ff; background: #e7f3fe; border-radius: 6px; font-size: 1.1em;"></div>
+        <!-- Wyjaśnienie punktacji w podsumowaniu testów -->
+        <div id="score-explanation" style="display:none; margin: 0 0 2em 0; color:#333; font-size:1em;">
+            <strong>Wyjaśnienie punktacji:</strong><br>
+            Zaliczone = +1 punkt, niezaliczone = -1 punkt, nie dotyczy = 0 punktów, nietestowalne = 0 punktów. Wynik końcowy to suma punktów za wszystkie testy w danej klauzuli.
+        </div>
+
+        <div id="export-options" style="display:none;">
+            <h2>Eksporuj raport</h2>
+            <button id="export-json-btn" class="secondary-btn">Eksportuj do JSON</button>
+            <button id="export-odt-btn" class="secondary-btn">Eksportuj do ODT</button>
+            <button id="export-csv-btn" class="secondary-btn">Eksportuj do CSV</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>
+            Narzędzie oparte na metodologii z Załącznika C normy EN 301 549.<br/>
+            Zawsze należy odnosić się do pełnej treści normy.<br/>
+            <a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf" target="_blank">
+                PDF z normą EN 301 549 (otwiera się w nowym oknie)
+            </a>
+        </p>
+        <p style="margin-top: 1em; font-size: 0.95em; color: #555;">
+            Narzędzie objęte jest licencją
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pl" target="_blank">
+                Creative Commons Uznanie autorstwa – Na tych samych warunkach 4.0 Międzynarodowa (CC BY-SA 4.0) (otwiera się w nowym oknie)
+            </a>.
+        </p>
+        <p style="margin-top: 1em; font-size: 0.95em; color: #555;">
+            Autor: Marcin Krzanicki &mdash; <a href="https://github.com/ka-er-zet/audyt-eaa" target="_blank">Repozytorium projektu (otwiera się w nowym oknie)</a>
+        </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('service-worker.js');
+        });
+      }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,447 @@
+<section id="audit-c6" class="audit-section">
+        <h2>Audyt Klauzuli 6: TIK z dwukierunkową komunikacją głosową</h2>
+        
+        <h3>C.6.1 Pasmo przenoszenia audio dla mowy</h3>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Measurement (Pomiar)</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>Testowany TIK zapewnia dwukierunkową komunikację głosową.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy TIK może kodować i dekodować audio w zakresie częstotliwości z górną granicą co najmniej 7 000 Hz.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.6.1 Pasmo przenoszenia audio dla mowy:</legend>
+                <div><label><input type="radio" name="res-c6-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c6-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c6-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c6-1">Uwagi:</label><textarea id="notes-c6-1"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h3>C.6.2 Funkcjonalność Tekstu w Czasie Rzeczywistym (RTT)</h3>
+        
+        <h4>C.6.2.1 Zapewnienie RTT</h4>
+        
+        <h5>C.6.2.1.1 Komunikacja RTT</h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>Testowany TIK posiada tryb zapewniający dwukierunkową komunikację głosową.</li>
+                    <li>TIK jest w trybie zapewniającym dwukierunkową komunikację głosową.</li>
+                    <li>Dostępny jest "terminal referencyjny RTT".</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy TIK pozwala na dwukierunkową komunikację RTT z "referencyjnym" TIK.</li></ol>
+                <p><strong>UWAGA:</strong> "Terminal referencyjny RTT" to terminal specjalnie zaprojektowany do testowania urządzeń obsługujących RTT w sposób, który potwierdziłby ich funkcjonalność i interoperacyjność. Zazwyczaj są one tworzone przez krajową lub międzynarodową jednostkę normalizacyjną, aby wszystkie testy były przeprowadzane przy użyciu spójnego "terminala referencyjnego RTT".</p>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.6.2.1.1 Komunikacja RTT:</legend>
+                <div><label><input type="radio" name="res-c6-2-1-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c6-2-1-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c6-2-1-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div><label><input type="radio" name="res-c6-2-1-1" value="nt"> <strong>Nietestowalne:</strong> Warunek wstępny 3 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c6-2-1-1">Uwagi:</label><textarea id="notes-c6-2-1-1"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h5>C.6.2.1.2 Równoczesna mowa i tekst</h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK zapewnia środek do dwukierunkowej komunikacji głosowej.</li>
+                    <li>TIK zapewnia środek do dwukierunkowej komunikacji RTT.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy TIK pozwala na równoczesne użycie głosu i RTT przez jedno połączenie użytkownika.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.6.2.1.2 Równoczesna mowa i tekst:</legend>
+                <div><label><input type="radio" name="res-c6-2-1-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c6-2-1-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c6-2-1-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c6-2-1-2">Uwagi:</label><textarea id="notes-c6-2-1-2"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h4>C.6.2.2 Wyświetlanie RTT</h4>
+        
+        <h5>C.6.2.2.1 Wizualnie rozróżnialny wyświetlacz</h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>Testowany TIK ma możliwości wysyłania i odbierania RTT.</li>
+                    <li>TIK obsługuje mechanizm(y) RTT.</li>
+                    <li>Dostępny jest "terminal referencyjny RTT".</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol>
+                    <li>Testowany TIK jest połączony z "terminalem referencyjnym RTT".</li>
+                    <li>Różne elementy TIK są w stanie operacyjnym (połączenie jest aktywne, a terminale są w odpowiednim trybie RTT) i oba terminale komunikują się ze sobą.</li>
+                    <li>Krótka sekwencja tekstu jest wysyłana przez testowany TIK.</li>
+                    <li>Krótka sekwencja tekstu jest wysyłana przez "terminal referencyjny RTT".</li>
+                    <li>Sprawdź, na testowanym TIK, czy wyświetlany wysłany tekst jest wizualnie zróżnicowany i oddzielony od odebranego tekstu.</li>
+                </ol>
+                <p><strong>UWAGA:</strong> "Terminal referencyjny RTT" to terminal specjalnie zaprojektowany do testowania urządzeń obsługujących RTT w sposób, który potwierdziłby ich funkcjonalność i interoperacyjność. Zazwyczaj są one tworzone przez krajową lub międzynarodową jednostkę normalizacyjną, aby wszystkie testy były przeprowadzane przy użyciu spójnego "terminala referencyjnego RTT".</p>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.6.2.2.1 Wizualnie rozróżnialny wyświetlacz:</legend>
+                <div><label><input type="radio" name="res-c6-2-2-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 5 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c6-2-2-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 5 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c6-2-2-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div><label><input type="radio" name="res-c6-2-2-1" value="nt"> <strong>Nietestowalne:</strong> Warunek wstępny 3 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c6-2-2-1">Uwagi:</label><textarea id="notes-c6-2-2-1"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h5>C.6.2.2.2 Programowo określany kierunek wysyłania i odbierania</h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK ma możliwości wysyłania i odbierania RTT.</li>
+                    <li>RTT jest funkcjonalnością otwartą.</li>
+                    <li>Dostępny jest "terminal referencyjny RTT".</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol>
+                    <li>Testowany TIK jest połączony z "terminalem referencyjnym RTT".</li>
+                    <li>Różne elementy TIK są w stanie operacyjnym (połączenie jest aktywne, a terminale są w odpowiednim trybie RTT) i oba terminale komunikują się ze sobą.</li>
+                    <li>Krótka sekwencja tekstu jest wysyłana przez testowany TIK.</li>
+                    <li>Krótka sekwencja tekstu jest wysyłana przez "terminal referencyjny RTT".</li>
+                    <li>Sprawdź, czy kierunek tekstu (wysłany/odebrany) może być określony programowo.</li>
+                </ol>
+                <p><strong>UWAGA:</strong> "Terminal referencyjny RTT" to terminal specjalnie zaprojektowany do testowania urządzeń obsługujących RTT w sposób, który potwierdziłby ich funkcjonalność i interoperacyjność. Zazwyczaj są one tworzone przez krajową lub międzynarodową jednostkę normalizacyjną, aby wszystkie testy były przeprowadzane przy użyciu spójnego "terminala referencyjnego RTT".</p>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.6.2.2.2 Programowo określany kierunek wysyłania i odbierania:</legend>
+                <div><label><input type="radio" name="res-c6-2-2-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 5 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c6-2-2-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 5 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c6-2-2-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div><label><input type="radio" name="res-c6-2-2-2" value="nt"> <strong>Nietestowalne:</strong> Warunek wstępny 3 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c6-2-2-2">Uwagi:</label><textarea id="notes-c6-2-2-2"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h5>C.6.2.2.3 Identyfikacja mówcy</h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK ma możliwości RTT.</li>
+                    <li>TIK zapewnia identyfikację mówcy dla głosu.</li>
+                    <li>Dostępny jest "terminal referencyjny RTT".</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol>
+                    <li>Testowany TIK jest połączony z "terminalem referencyjnym RTT".</li>
+                    <li>RTT jest wysyłane z "terminala referencyjnego RTT".</li>
+                    <li>Sprawdź przez obserwację, czy testowany TIK zapewnia identyfikację mówcy dla przychodzącego tekstu RTT.</li>
+                </ol>
+                <p><strong>UWAGA:</strong> "Terminal referencyjny RTT" to terminal specjalnie zaprojektowany do testowania urządzeń obsługujących RTT w sposób, który potwierdziłby ich funkcjonalność i interoperacyjność. Zazwyczaj są one tworzone przez krajową lub międzynarodową jednostkę normalizacyjną, aby wszystkie testy były przeprowadzane przy użyciu spójnego "terminala referencyjnego RTT".</p>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.6.2.2.3 Identyfikacja mówcy:</legend>
+                <div><label><input type="radio" name="res-c6-2-2-3" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 3 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c6-2-2-3" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 3 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c6-2-2-3" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div><label><input type="radio" name="res-c6-2-2-3" value="nt"> <strong>Nietestowalne:</strong> Warunek wstępny 3 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c6-2-2-3">Uwagi:</label><textarea id="notes-c6-2-2-3"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h5>C.6.2.2.4 Wizualny wskaźnik audio z RTT</h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK zapewnia dwukierunkową komunikację głosową.</li>
+                    <li>TIK ma możliwości RTT.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol>
+                    <li>Testowany TIK jest połączony z innym TIK zapewniającym dwukierunkową komunikację głosową, kompatybilną z komunikacją głosową na testowanym TIK.</li>
+                    <li>Osoba mówi do drugiego TIK.</li>
+                    <li>Sprawdź przez obserwację, czy istnieje wizualny wskaźnik aktywności audio w czasie rzeczywistym.</li>
+                </ol>
+                <p><strong>UWAGA:</strong> Wskaźnik powinien migotać w czasie rzeczywistym w sposób odzwierciedlający aktywność audio.</p>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.6.2.2.4 Wizualny wskaźnik audio z RTT:</legend>
+                <div><label><input type="radio" name="res-c6-2-2-4" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 3 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c6-2-2-4" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 3 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c6-2-2-4" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c6-2-2-4">Uwagi:</label><textarea id="notes-c6-2-2-4"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h4>C.6.2.3 Interoperacyjność</h4>
+        
+        <h5>C.6.2.3.a Interoperacyjność (a)</h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Test</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK zapewnia środek do dwukierunkowej komunikacji głosowej przez Publiczną Komutowaną Sieć Telefoniczną (PSTN).</li>
+                    <li>TIK zapewnia środek do dwukierunkowej komunikacji RTT.</li>
+                    <li>Dostępny jest "terminal referencyjny V.18".</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy TIK interoperuje przez PSTN z terminalem referencyjnym V.18 podłączonym do PSTN, zgodnie z zaleceniem ITU-T V.18 [i.23].</li></ol>
+                <p><strong>UWAGA:</strong> "Terminal referencyjny V.18" to terminal specjalnie zaprojektowany do testowania urządzeń obsługujących V.18 w sposób, który potwierdziłby ich funkcjonalność i interoperacyjność. Zazwyczaj są one tworzone przez krajową lub międzynarodową jednostkę normalizacyjną, aby wszystkie testy były przeprowadzane przy użyciu spójnego terminala referencyjnego.</p>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.6.2.3.a Interoperacyjność (a):</legend>
+                <div><label><input type="radio" name="res-c6-2-3-a" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c6-2-3-a" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c6-2-3-a" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div><label><input type="radio" name="res-c6-2-3-a" value="nt"> <strong>Nietestowalne:</strong> Warunek wstępny 3 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c6-2-3-a">Uwagi:</label><textarea id="notes-c6-2-3-a"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h5>C.6.2.3.b Interoperacyjność (b)</h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Test</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK zapewnia środek do dwukierunkowej komunikacji głosowej przez sieć IP.</li>
+                    <li>TIK zapewnia środek do dwukierunkowej komunikacji RTT.</li>
+                    <li>Dostępny jest "terminal referencyjny RTT".</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy TIK interoperuje z terminalem referencyjnym RTT zgodnie z RFC 4103 [i.7] dla bramy SIP.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.6.2.3.b Interoperacyjność (b):</legend>
+                <div><label><input type="radio" name="res-c6-2-3-b" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c6-2-3-b" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c6-2-3-b" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div><label><input type="radio" name="res-c6-2-3-b" value="nt"> <strong>Nietestowalne:</strong> Warunek wstępny 3 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c6-2-3-b">Uwagi:</label><textarea id="notes-c6-2-3-b"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h5>C.6.2.3.c Interoperacyjność (c)</h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Test</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK zapewnia środek do dwukierunkowej komunikacji głosowej przez sieć IP.</li>
+                    <li>TIK zapewnia środek do dwukierunkowej komunikacji RTT.</li>
+                    <li>Dostępny jest "terminal referencyjny RTT".</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy TIK interoperuje z terminalem referencyjnym RTT zgodnie z zaleceniem ITU-T H.248.88 [i.24] dla bramy H.248.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.6.2.3.c Interoperacyjność (c):</legend>
+                <div><label><input type="radio" name="res-c6-2-3-c" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c6-2-3-c" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c6-2-3-c" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div><label><input type="radio" name="res-c6-2-3-c" value="nt"> <strong>Nietestowalne:</strong> Warunek wstępny 3 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c6-2-3-c">Uwagi:</label><textarea id="notes-c6-2-3-c"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h5>C.6.2.3.d Interoperacyjność (d)</h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Test</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK zapewnia środek do dwukierunkowej komunikacji głosowej przez sieć IP.</li>
+                    <li>TIK zapewnia środek do dwukierunkowej komunikacji RTT.</li>
+                    <li>Dostępny jest "terminal referencyjny RTT".</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy TIK interoperuje z terminalem referencyjnym RTT zgodnie z ETSI TS 126 114 [i.10] i ETSI TS 124 229 [i.9] dla IMS.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.6.2.3.d Interoperacyjność (d):</legend>
+                <div><label><input type="radio" name="res-c6-2-3-d" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c6-2-3-d" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c6-2-3-d" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div><label><input type="radio" name="res-c6-2-3-d" value="nt"> <strong>Nietestowalne:</strong> Warunek wstępny 3 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c6-2-3-d">Uwagi:</label><textarea id="notes-c6-2-3-d"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h3>C.6.3 Identyfikacja dzwoniącego</h3>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Testing</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK zapewnia dwukierunkową komunikację głosową.</li>
+                    <li>TIK ma funkcję identyfikacji dzwoniącego.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy informacja o identyfikacji dzwoniącego jest dostępna programowo dla technologii asystujących.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.6.3 Identyfikacja dzwoniącego:</legend>
+                <div><label><input type="radio" name="res-c6-3" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c6-3" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c6-3" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c6-3">Uwagi:</label><textarea id="notes-c6-3"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h3>C.6.4 Alternatywy dla funkcji głosowych</h3>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK zapewnia dwukierunkową komunikację głosową.</li>
+                    <li>TIK ma funkcje sterowane głosem.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy funkcje sterowane głosem można obsługiwać za pomocą alternatywnych mechanizmów.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.6.4 Alternatywy dla funkcji głosowych:</legend>
+                <div><label><input type="radio" name="res-c6-4" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c6-4" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c6-4" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c6-4">Uwagi:</label><textarea id="notes-c6-4"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h3>C.6.5 Komunikacja wideo</h3>
+        <div class="audit-item informative">
+            <h4>C.6.5.1 Ogólne</h4>
+            <p>Klauzula 6.5.1 jest informacyjna i nie zawiera wymagań do testowania.</p>
+        </div>
+        
+        <h4>C.6.5.2 Rozdzielczość</h4>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK zapewnia dwukierunkową komunikację głosową.</li>
+                    <li>TIK zawiera funkcjonalność wideo w czasie rzeczywistym.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy rozdzielczość komunikacji wideo wynosi QVGA lub więcej.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.6.5.2 Rozdzielczość:</legend>
+                <div><label><input type="radio" name="res-c6-5-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c6-5-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c6-5-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c6-5-2">Uwagi:</label><textarea id="notes-c6-5-2"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h4>C.6.5.3 Szybkość klatek</h4>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK zapewnia dwukierunkową komunikację głosową.</li>
+                    <li>TIK zawiera funkcjonalność wideo w czasie rzeczywistym.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy szybkość klatek komunikacji wideo jest równa lub wyższa niż 20 klatek na sekundę.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.6.5.3 Szybkość klatek:</legend>
+                <div><label><input type="radio" name="res-c6-5-3" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c6-5-3" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c6-5-3" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c6-5-3">Uwagi:</label><textarea id="notes-c6-5-3"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h4>C.6.5.4 Synchronizacja między audio i wideo</h4>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Measurement</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK zapewnia dwukierunkową komunikację głosową.</li>
+                    <li>TIK zawiera funkcjonalność wideo w czasie rzeczywistym.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy różnica czasu między mową a wideo prezentowanym użytkownikowi jest równa lub mniejsza niż 100 ms.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.6.5.4 Synchronizacja między audio i wideo:</legend>
+                <div><label><input type="radio" name="res-c6-5-4" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c6-5-4" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c6-5-4" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c6-5-4">Uwagi:</label><textarea id="notes-c6-5-4"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h4>C.6.5.5 Wizualny wskaźnik audio z wideo</h4>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK zapewnia dwukierunkową komunikację głosową.</li>
+                    <li>TIK ma możliwości wideo w czasie rzeczywistym.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol>
+                    <li>Testowany TIK jest połączony z innym TIK zapewniającym dwukierunkową komunikację głosową, kompatybilną z komunikacją głosową na testowanym TIK.</li>
+                    <li>Osoba mówi do drugiego TIK.</li>
+                    <li>Sprawdź przez obserwację, czy istnieje wizualny wskaźnik aktywności audio w czasie rzeczywistym.</li>
+                </ol>
+                <p><strong>UWAGA:</strong> Wskaźnik powinien migotać w czasie rzeczywistym w sposób odzwierciedlający aktywność audio.</p>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.6.5.5 Wizualny wskaźnik audio z wideo:</legend>
+                <div><label><input type="radio" name="res-c6-5-5" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 3 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c6-5-5" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 3 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c6-5-5" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c6-5-5">Uwagi:</label><textarea id="notes-c6-5-5"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h4>C.6.5.6 Identyfikacja mówcy w komunikacji wideo (język migowy)</h4>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Measurement</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK zapewnia dwukierunkową komunikację głosową.</li>
+                    <li>TIK zawiera wideo w czasie rzeczywistym.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol>
+                    <li>Testowany TIK jest połączony z kompatybilnym TIK, który obsługuje wideo, a osoba komunikuje się w języku migowym.</li>
+                    <li>Sprawdź przez obserwację, czy testowany TIK zapewnia środek do identyfikacji mówcy dla użytkowników języka migowego.</li>
+                </ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.6.5.6 Identyfikacja mówcy w komunikacji wideo (język migowy):</legend>
+                <div><label><input type="radio" name="res-c6-5-6" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 2 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c6-5-6" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 2 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c6-5-6" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c6-5-6">Uwagi:</label><textarea id="notes-c6-5-6"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h3>C.6.6 Alternatywy dla usług opartych na wideo</h3>
+        <div class="audit-item informative">
+            <p>Klauzula 6.6 jest doradcza i nie zawiera wymagań do testowania.</p>
+        </div>
+    </section>

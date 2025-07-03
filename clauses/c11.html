@@ -1,0 +1,1484 @@
+<section id="audit-c11" class="audit-section">
+        <h2>Audyt Klauzuli 11: Oprogramowanie</h2>
+        
+        <h3>C.11.0 Ogólne</h3>
+        <div class="audit-item informative">
+            <p>Klauzula 11.0 ma charakter wyłącznie doradczy i nie zawiera wymagań do testowania.</p>
+        </div>
+        
+        <h3>C.11.1 Postrzegalność</h3>
+        
+        <h4>C.11.1.1 Alternatywy tekstowe</h4>
+        <h5>C.11.1.1.1 Treści nietekstowe</h5>
+        
+        <h6>C.11.1.1.1.1 Treści nietekstowe (funkcjonalność otwarta) <span class="poziom poziom-a">A</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Oprogramowanie zapewnia wsparcie dla technologii asystujących do odczytu ekranu.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 1.1.1</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.1.1.1 Treści nietekstowe (funkcjonalność otwarta)</legend>
+                <div><label><input type="radio" name="res-c11-1-1-1-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-1-1-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-1-1-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-1-1-1">Uwagi:</label><textarea id="notes-c11-1-1-1-1"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h6>C.11.1.1.1.2 Treści nietekstowe (funkcjonalność zamknięta) <span class="poziom poziom-a">A</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Testing</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Interfejs użytkownika jest zamknięty dla technologii asystujących do odczytu ekranu.</li>
+                    <li>Treści nietekstowe są prezentowane użytkownikom za pomocą wyjścia mowy.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol>
+                    <li>Sprawdź, czy zapewniono wyjście mowy jako alternatywę dla treści nietekstowych.</li>
+                    <li>Sprawdź, czy treść nietekstowa nie jest czystą dekoracją.</li>
+                    <li>Sprawdź, czy treść nietekstowa nie jest używana tylko do formatowania wizualnego.</li>
+                    <li>Sprawdź, czy wyjście mowy jest zgodne z wytycznymi dla "alternatyw tekstowych" opisanymi w <a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 1.1.1</a>.</li>
+                </ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.1.1.2 Treści nietekstowe (funkcjonalność zamknięta)</legend>
+                <div><label><input type="radio" name="res-c11-1-1-1-2" value="pass"> <strong>Zaliczone:</strong> (Sprawdzenia 1, 2, 3 i 4 są prawdziwe) LUB (1 i 2 są fałszywe) LUB (1 i 3 są fałszywe).</label></div>
+                <div><label><input type="radio" name="res-c11-1-1-1-2" value="fail"> <strong>Niezaliczone:</strong> (1 jest prawdziwe i 2 fałszywe) LUB (1 jest prawdziwe i 3 fałszywe) LUB (1, 2, i 3 są prawdziwe, a 4 jest fałszywe).</label></div>
+                <div><label><input type="radio" name="res-c11-1-1-1-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1, 2 lub 3 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-1-1-2">Uwagi:</label><textarea id="notes-c11-1-1-1-2"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h4>C.11.1.2 Media oparte na czasie</h4>
+        <h5>C.11.1.2.1 Tylko audio i tylko wideo (nagrane)</h5>
+        
+        <h6>C.11.1.2.1.1 Tylko audio i tylko wideo (nagrane - funkcjonalność otwarta) <span class="poziom poziom-a">A</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Oprogramowanie zapewnia wsparcie dla technologii asystujących do odczytu ekranu.</li>
+                    <li>Nagrana informacja słuchowa nie jest potrzebna do korzystania z zamkniętych funkcji TIK.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 1.2.1</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.2.1.1 Tylko audio i tylko wideo (nagrane - funkcjonalność otwarta)</legend>
+                <div><label><input type="radio" name="res-c11-1-2-1-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-2-1-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-2-1-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1, 2 lub 3 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-2-1-1">Uwagi:</label><textarea id="notes-c11-1-2-1-1"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h6>C.11.1.2.1.2.1 Tylko audio (nagrane - funkcjonalność zamknięta) <span class="poziom poziom-a">A</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Interfejs użytkownika jest zamknięty dla technologii asystujących do odczytu ekranu.</li>
+                    <li>Nagrana informacja słuchowa jest potrzebna do korzystania z zamkniętych funkcji TIK.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy informacja wizualna jest równoważna nagranemu wyjściu słuchowemu.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.2.1.2.1 Tylko audio (nagrane - funkcjonalność zamknięta)</legend>
+                <div><label><input type="radio" name="res-c11-1-2-1-2-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-2-1-2-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-2-1-2-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1, 2 lub 3 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-2-1-2-1">Uwagi:</label><textarea id="notes-c11-1-2-1-2-1"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h6>C.11.1.2.1.2.2 Tylko wideo (nagrane - funkcjonalność zamknięta) <span class="poziom poziom-a">A</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Interfejs użytkownika jest zamknięty dla technologii asystujących do odczytu ekranu.</li>
+                    <li>Nagrania wideo są potrzebne do korzystania z zamkniętych funkcji TIK.</li>
+                    <li>Wyjście mowy jest zapewnione jako niewizualny dostęp do treści nietekstowych wyświetlanych w zamkniętej funkcjonalności.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy wyjście mowy prezentuje równoważne informacje dla nagranego wideo.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.2.1.2.2 Tylko wideo (nagrane - funkcjonalność zamknięta)</legend>
+                <div><label><input type="radio" name="res-c11-1-2-1-2-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-2-1-2-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-2-1-2-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1, 2, 3 lub 4 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-2-1-2-2">Uwagi:</label><textarea id="notes-c11-1-2-1-2-2"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h5>C.11.1.2.2 Napisy (nagrane) <span class="poziom poziom-a">A</span></h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 1.2.2</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.2.2 Napisy (nagrane)</legend>
+                <div><label><input type="radio" name="res-c11-1-2-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-2-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-2-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony lub oprogramowanie nie zawiera treści istotnych dla KS WCAG 2.1 1.2.2.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-2-2">Uwagi:</label><textarea id="notes-c11-1-2-2"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h5>C.11.1.2.3 Audiodeskrypcja lub alternatywa dla mediów (nagrane)</h5>
+        
+        <h6>C.11.1.2.3.1 Audiodeskrypcja lub alternatywa dla mediów (nagrane - funkcjonalność otwarta) <span class="poziom poziom-a">A</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Oprogramowanie zapewnia wsparcie dla technologii asystujących do odczytu ekranu.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 1.2.3</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.2.3.1 Audiodeskrypcja lub alternatywa dla mediów (nagrane - funkcjonalność otwarta)</legend>
+                <div><label><input type="radio" name="res-c11-1-2-3-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-2-3-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-2-3-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony, lub oprogramowanie nie zawiera treści istotnych dla KS WCAG 2.1 1.2.3.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-2-3-1">Uwagi:</label><textarea id="notes-c11-1-2-3-1"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h6>C.11.1.2.3.2 Audiodeskrypcja lub alternatywa dla mediów (nagrane - funkcjonalność zamknięta) <span class="poziom poziom-a">A</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Interfejs użytkownika jest zamknięty dla technologii asystujących do odczytu ekranu.</li>
+                    <li>Wyjście mowy jest zapewnione jako niewizualny dostęp do treści nietekstowych wyświetlanych w zamkniętej funkcjonalności.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy wyjście mowy prezentuje równoważne informacje dla nagranego wideo.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.2.3.2 Audiodeskrypcja lub alternatywa dla mediów (nagrane - funkcjonalność zamknięta)</legend>
+                <div><label><input type="radio" name="res-c11-1-2-3-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-2-3-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-2-3-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1, 2 lub 3 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-2-3-2">Uwagi:</label><textarea id="notes-c11-1-2-3-2"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h5>C.11.1.2.4 Napisy (na żywo) <span class="poziom poziom-aa">AA</span></h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/captions-live.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 1.2.4</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.2.4 Napisy (na żywo)</legend>
+                <div><label><input type="radio" name="res-c11-1-2-4" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-2-4" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-2-4" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony lub oprogramowanie nie zawiera treści istotnych dla KS WCAG 2.1 1.2.4.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-2-4">Uwagi:</label><textarea id="notes-c11-1-2-4"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h5>C.11.1.2.5 Audiodeskrypcja (nagrana) <span class="poziom poziom-aa">AA</span></h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 1.2.5</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.2.5 Audiodeskrypcja (nagrana)</legend>
+                <div><label><input type="radio" name="res-c11-1-2-5" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-2-5" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-2-5" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony lub oprogramowanie nie zawiera treści istotnych dla KS WCAG 2.1 1.2.5.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-2-5">Uwagi:</label><textarea id="notes-c11-1-2-5"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h4>C.11.1.3 Możliwość adaptacji</h4>
+        <h5>C.11.1.3.1 Informacje i relacje</h5>
+        
+        <h6>C.11.1.3.1.1 Informacje i relacje (funkcjonalność otwarta) <span class="poziom poziom-a">A</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Oprogramowanie zapewnia wsparcie dla technologii asystujących do odczytu ekranu.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 1.3.1</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.3.1.1 Informacje i relacje (funkcjonalność otwarta)</legend>
+                <div><label><input type="radio" name="res-c11-1-3-1-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-3-1-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-3-1-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-3-1-1">Uwagi:</label><textarea id="notes-c11-1-3-1-1"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h6>C.11.1.3.1.2 Informacje i relacje (funkcjonalność zamknięta)</h6>
+        <div class="audit-item informative">
+            <p>Klauzula 11.1.3.1.2 ma charakter wyłącznie doradczy i nie zawiera wymagań do testowania.</p>
+        </div>
+
+        <h5>C.11.1.3.2 Zrozumiała kolejność</h5>
+        
+        <h6>C.11.1.3.2.1 Zrozumiała kolejność (funkcjonalność otwarta) <span class="poziom poziom-a">A</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Oprogramowanie zapewnia wsparcie dla technologii asystujących do odczytu ekranu.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 1.3.2</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.3.2.1 Zrozumiała kolejność (funkcjonalność otwarta)</legend>
+                <div><label><input type="radio" name="res-c11-1-3-2-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-3-2-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-3-2-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-3-2-1">Uwagi:</label><textarea id="notes-c11-1-3-2-1"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h6>C.11.1.3.2.2 Zrozumiała kolejność (funkcjonalność zamknięta)</h6>
+        <div class="audit-item informative">
+            <p>Klauzula 11.1.3.2.2 ma charakter wyłącznie doradczy i nie zawiera wymagań do testowania.</p>
+        </div>
+
+        <h6>C.11.1.3.3 Charakterystyka zmysłowa <span class="poziom poziom-a">A</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 1.3.3</a>.</li></ol>
+            </div>
+           <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.3.3 Charakterystyka zmysłowa</legend>
+                <div><label><input type="radio" name="res-c11-1-3-3" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-3-3" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-3-3" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony lub oprogramowanie nie zawiera treści istotnych dla KS WCAG 2.1 1.3.3.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-3-3">Uwagi:</label><textarea id="notes-c11-1-3-3"></textarea></div>
+           </fieldset>
+        </div>
+
+        <h5>C.11.1.3.4 Orientacja <span class="poziom poziom-aa">AA</span></h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/orientation.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 1.3.4</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.3.4 Orientacja</legend>
+                <div><label><input type="radio" name="res-c11-1-3-4" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-3-4" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-3-4" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony lub oprogramowanie nie zawiera treści istotnych dla KS WCAG 2.1 1.3.4.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-3-4">Uwagi:</label><textarea id="notes-c11-1-3-4"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h5>C.11.1.3.5 Określenie przeznaczenia pól</h5>
+        
+        <h6>C.11.1.3.5.1 Określenie przeznaczenia pól (funkcjonalność otwarta) <span class="poziom poziom-aa">AA</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Oprogramowanie zapewnia wsparcie dla technologii asystujących do odczytu ekranu.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 1.3.5</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.3.5.1 Określenie przeznaczenia pól (funkcjonalność otwarta)</legend>
+                <div><label><input type="radio" name="res-c11-1-3-5-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-3-5-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-3-5-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony, lub oprogramowanie nie zawiera treści istotnych dla KS WCAG 2.1 1.3.5.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-3-5-1">Uwagi:</label><textarea id="notes-c11-1-3-5-1"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h6>C.11.1.3.5.2 Określenie przeznaczenia pól (funkcjonalność zamknięta) <span class="poziom poziom-aa">AA</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Oprogramowanie nie zapewnia wsparcia dla technologii asystujących do odczytu ekranu.</li>
+                    <li>Wyjście słuchowe jest zapewnione jako niewizualny dostęp do zamkniętej funkcjonalności.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol>
+                    <li>Sprawdź, czy wyjście słuchowe jest dostarczane przez mechanizm zawarty w TIK lub dostarczony z nim.</li>
+                    <li>Sprawdź, czy wyjście słuchowe jest dostarczane przez osobiste słuchawki, które można podłączyć przez gniazdo audio 3,5 mm lub standardowe złącze branżowe bez konieczności użycia wzroku.</li>
+                    <li>Sprawdź, czy wyjście słuchowe składa się z celów z sekcji "Input Purposes for User Interface Components".</li>
+                </ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.3.5.2 Określenie przeznaczenia pól (funkcjonalność zamknięta)</legend>
+                <div><label><input type="radio" name="res-c11-1-3-5-2" value="pass"> <strong>Zaliczone:</strong> (Sprawdzenie 1 lub 2 jest prawdziwe) ORAZ sprawdzenie 3 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-3-5-2" value="fail"> <strong>Niezaliczone:</strong> (Sprawdzenia 1 i 2 są fałszywe) LUB sprawdzenie 3 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-3-5-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1, 2 lub 3 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-3-5-2">Uwagi:</label><textarea id="notes-c11-1-3-5-2"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h4>C.11.1.4 Rozróżnialność</h4>
+        
+        <h5>C.11.1.4.1 Użycie koloru <span class="poziom poziom-a">A</span></h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 1.4.1</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.4.1 Użycie koloru</legend>
+                <div><label><input type="radio" name="res-c11-1-4-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-4-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-4-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony lub oprogramowanie nie zawiera treści istotnych dla KS WCAG 2.1 1.4.1.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-4-1">Uwagi:</label><textarea id="notes-c11-1-4-1"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h5>C.11.1.4.2 Kontrola dźwięku <span class="poziom poziom-a">A</span></h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy jeśli jakikolwiek dźwięk w oprogramowaniu odtwarza się automatycznie przez ponad 3 sekundy, dostępny jest mechanizm do jego wstrzymania lub zatrzymania, LUB mechanizm do kontroli głośności niezależnie od ogólnego poziomu głośności systemu.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.4.2 Kontrola dźwięku</legend>
+                <div><label><input type="radio" name="res-c11-1-4-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-4-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-4-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-4-2">Uwagi:</label><textarea id="notes-c11-1-4-2"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h5>C.11.1.4.3 Kontrast (minimalny) <span class="poziom poziom-aa">AA</span></h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 1.4.3</a>.</li></ol>
+            </div>
+           <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.4.3 Kontrast (minimalny)</legend>
+                <div><label><input type="radio" name="res-c11-1-4-3" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-4-3" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-4-3" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony lub oprogramowanie nie zawiera treści istotnych dla KS WCAG 2.1 1.4.3.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-4-3">Uwagi:</label><textarea id="notes-c11-1-4-3"></textarea></div>
+           </fieldset>
+        </div>
+
+        <h5>C.11.1.4.4 Zmiana rozmiaru tekstu</h5>
+        
+        <h6>C.11.1.4.4.1 Zmiana rozmiaru tekstu (funkcjonalność otwarta) <span class="poziom poziom-aa">AA</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Oprogramowanie wspiera funkcje powiększania platformy lub technologii asystującej.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 1.4.4</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.4.4.1 Zmiana rozmiaru tekstu (funkcjonalność otwarta)</legend>
+                <div><label><input type="radio" name="res-c11-1-4-4-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-4-4-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-4-4-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony lub oprogramowanie nie zawiera treści istotnych dla KS WCAG 2.1 1.4.4.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-4-4-1">Uwagi:</label><textarea id="notes-c11-1-4-4-1"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h6>C.11.1.4.4.2 Zmiana rozmiaru tekstu (funkcjonalność zamknięta) <span class="poziom poziom-aa">AA</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection and measurement</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Interfejs użytkownika jest zamknięty dla funkcji powiększania platformy lub technologii asystującej.</li>
+                    <li>Odległość oglądania jest określona przez dostawcę.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol>
+                    <li>Zmierz wysokość wielkiej litery H.</li>
+                    <li>Sprawdź, czy tworzy ona kąt co najmniej 0,7 stopnia przy określonej odległości oglądania.</li>
+                </ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.4.4.2 Zmiana rozmiaru tekstu (funkcjonalność zamknięta)</legend>
+                <div><label><input type="radio" name="res-c11-1-4-4-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 2 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-4-4-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 2 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-4-4-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1, 2 lub 3 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-4-4-2">Uwagi:</label><textarea id="notes-c11-1-4-4-2"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h5>C.11.1.4.5 Obrazy tekstu</h5>
+        
+        <h6>C.11.1.4.5.1 Obrazy tekstu (funkcjonalność otwarta) <span class="poziom poziom-aa">AA</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Oprogramowanie zapewnia wsparcie dla technologii asystujących do odczytu ekranu.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 1.4.5</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.4.5.1 Obrazy tekstu (funkcjonalność otwarta)</legend>
+                <div><label><input type="radio" name="res-c11-1-4-5-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-4-5-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-4-5-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony, lub oprogramowanie nie zawiera treści istotnych dla KS WCAG 2.1 1.4.5.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-4-5-1">Uwagi:</label><textarea id="notes-c11-1-4-5-1"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h6>C.11.1.4.5.2 Obrazy tekstu (funkcjonalność zamknięta) <span class="poziom poziom-aa">AA</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Testing</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Interfejs użytkownika jest zamknięty dla technologii asystujących do odczytu ekranu.</li>
+                    <li>Treści nietekstowe są prezentowane użytkownikom za pomocą wyjścia mowy.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol>
+                    <li>Sprawdź, czy zapewniono wyjście mowy jako alternatywę dla treści nietekstowych.</li>
+                    <li>Sprawdź, czy treść nietekstowa nie jest czystą dekoracją.</li>
+                    <li>Sprawdź, czy treść nietekstowa nie jest używana tylko do formatowania wizualnego.</li>
+                    <li>Sprawdź, czy wyjście mowy jest zgodne z wytycznymi dla "alternatyw tekstowej" opisanymi w <a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 1.1.1</a>.</li>
+                </ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.4.5.2 Obrazy tekstu (funkcjonalność zamknięta)</legend>
+                <div><label><input type="radio" name="res-c11-1-4-5-2" value="pass"> <strong>Zaliczone:</strong> (Sprawdzenia 1, 2, 3 i 4 są prawdziwe) LUB (1 i 2 są fałszywe) LUB (1 i 3 są fałszywe).</label></div>
+                <div><label><input type="radio" name="res-c11-1-4-5-2" value="fail"> <strong>Niezaliczone:</strong> (1 jest prawdziwe i 2 fałszywe) LUB (1 jest prawdziwe i 3 fałszywe) LUB (1, 2, i 3 są prawdziwe, a 4 jest fałszywe).</label></div>
+                <div><label><input type="radio" name="res-c11-1-4-5-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1, 2 lub 3 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-4-5-2">Uwagi:</label><textarea id="notes-c11-1-4-5-2"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h5>C.11.1.4.10 Zawijanie tekstu (Reflow) <span class="poziom poziom-aa">AA</span></h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy treść może być prezentowana bez utraty informacji lub funkcjonalności i bez konieczności przewijania w dwóch wymiarach dla:
+                        <ul>
+                            <li>Treści przewijanej pionowo przy szerokości odpowiadającej 320 pikselom CSS;</li>
+                            <li>Treści przewijanej poziomo przy wysokości odpowiadającej 256 pikselom CSS.</li>
+                        </ul>
+                        Z wyjątkiem części treści, które wymagają dwuwymiarowego układu do użycia lub ze względu na znaczenie.
+                    </li>
+                </ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.4.10 Zawijanie tekstu (Reflow)</legend>
+                <div><label><input type="radio" name="res-c11-1-4-10" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-4-10" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-4-10" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-4-10">Uwagi:</label><textarea id="notes-c11-1-4-10"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h5>C.11.1.4.11 Kontrast elementów nietekstowych <span class="poziom poziom-aa">AA</span></h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 1.4.11</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.4.11 Kontrast elementów nietekstowych</legend>
+                <div><label><input type="radio" name="res-c11-1-4-11" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-4-11" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-4-11" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony lub oprogramowanie nie zawiera treści istotnych dla KS WCAG 2.1 1.4.11.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-4-11">Uwagi:</label><textarea id="notes-c11-1-4-11"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h5>C.11.1.4.12 Odstępy w tekście <span class="poziom poziom-aa">AA</span></h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 1.4.12</a>.</li></ol>
+            </div>
+           <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.4.12 Odstępy w tekście</legend>
+                <div><label><input type="radio" name="res-c11-1-4-12" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-4-12" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-4-12" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony lub oprogramowanie nie zawiera treści istotnych dla KS WCAG 2.1 1.4.12.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-4-12">Uwagi:</label><textarea id="notes-c11-1-4-12"></textarea></div>
+           </fieldset>
+        </div>
+
+        <h5>C.11.1.4.13 Treść spod wskaźnika lub fokusu <span class="poziom poziom-aa">AA</span></h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 1.4.13</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.1.4.13 Treść spod wskaźnika lub fokusu</legend>
+                <div><label><input type="radio" name="res-c11-1-4-13" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-4-13" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-1-4-13" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony lub oprogramowanie nie zawiera treści istotnych dla KS WCAG 2.1 1.4.13.</label></div>
+                <div class="test-notes"><label for="notes-c11-1-4-13">Uwagi:</label><textarea id="notes-c11-1-4-13"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h3>C.11.2 Operacyjność</h3>
+        
+        <h4>C.11.2.1 Dostępność z klawiatury</h4>
+        <h5>C.11.2.1.1 Klawiatura</h5>
+        
+        <h6>C.11.2.1.1.1 Klawiatura (funkcjonalność otwarta) <span class="poziom poziom-a">A</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Oprogramowanie wspiera klawiatury lub interfejs klawiaturowy.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 2.1.1 Klawiatura</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.2.1.1.1 Klawiatura (funkcjonalność otwarta)</legend>
+                <div><label><input type="radio" name="res-c11-2-1-1-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-1-1-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-1-1-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony, lub oprogramowanie nie zawiera treści istotnych dla KS WCAG 2.1 2.1.1.</label></div>
+                <div class="test-notes"><label for="notes-c11-2-1-1-1">Uwagi:</label><textarea id="notes-c11-2-1-1-1"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h6>C.11.2.1.1.2 Klawiatura (funkcjonalność zamknięta) <span class="poziom poziom-a">A</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Interfejs użytkownika jest zamknięty dla klawiatur lub interfejsów klawiaturowych.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy cała funkcjonalność interfejsu użytkownika jest obsługiwalna bez użycia wzroku.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.2.1.1.2 Klawiatura (funkcjonalność zamknięta)</legend>
+                <div><label><input type="radio" name="res-c11-2-1-1-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-1-1-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-1-1-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-2-1-1-2">Uwagi:</label><textarea id="notes-c11-2-1-1-2"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h6>C.11.2.1.2 Brak pułapki na klawiaturę <span class="poziom poziom-a">A</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy jeśli fokus klawiatury można przenieść do komponentu oprogramowania za pomocą interfejsu klawiatury, to można go również odsunąć od tego komponentu, używając wyłącznie interfejsu klawiatury, a jeśli wymaga to czegoś więcej niż niemodyfikowanych klawiszy strzałek, tabulatora lub innych standardowych metod wyjścia, użytkownik jest poinformowany o sposobie przeniesienia fokusu.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.2.1.2 Brak pułapki na klawiaturę</legend>
+                <div><label><input type="radio" name="res-c11-2-1-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-1-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-1-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-2-1-2">Uwagi:</label><textarea id="notes-c11-2-1-2"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h5>C.11.2.1.4 Skróty klawiszowe</h5>
+        
+        <h6>C.11.2.1.4.1 Skróty klawiszowe (funkcjonalność otwarta) <span class="poziom poziom-a">A</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Oprogramowanie wspiera co najmniej jedną technologię asystującą.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/character-key-shortcuts.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 2.1.4</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.2.1.4.1 Skróty klawiszowe (funkcjonalność otwarta)</legend>
+                <div><label><input type="radio" name="res-c11-2-1-4-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-1-4-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-1-4-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony, lub oprogramowanie nie zawiera treści istotnych dla KS WCAG 2.1 2.1.4.</label></div>
+                <div class="test-notes"><label for="notes-c11-2-1-4-1">Uwagi:</label><textarea id="notes-c11-2-1-4-1"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h6>C.11.2.1.4.2 Skróty klawiszowe (funkcjonalność zamknięta) <span class="poziom poziom-a">A</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Funkcjonalność TIK jest zamknięta dla klawiatur lub interfejsów klawiaturowych.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy cała funkcjonalność jest obsługiwalna bez użycia wzroku.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.2.1.4.2 Skróty klawiszowe (funkcjonalność zamknięta)</legend>
+                <div><label><input type="radio" name="res-c11-2-1-4-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-1-4-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-1-4-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-2-1-4-2">Uwagi:</label><textarea id="notes-c11-2-1-4-2"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h4>C.11.2.2 Wystarczająca ilość czasu</h4>
+        
+        <h5>C.11.2.2.1 Regulacja czasu <span class="poziom poziom-a">A</span></h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Dla każdego limitu czasu ustawionego przez oprogramowanie, sprawdź, czy spełniony jest co najmniej jeden z poniższych warunków:
+                        <ul>
+                            <li><strong>Wyłączenie:</strong> Użytkownik może wyłączyć limit czasu przed jego napotkaniem; lub</li>
+                            <li><strong>Dostosowanie:</strong> Użytkownik może dostosować limit czasu przed jego napotkaniem w szerokim zakresie, co najmniej dziesięciokrotnie dłuższym niż ustawienie domyślne; lub</li>
+                            <li><strong>Przedłużenie:</strong> Użytkownik jest ostrzegany przed upływem czasu i ma co najmniej 20 sekund na przedłużenie limitu czasu prostą czynnością (np. "naciśnij spację"), a użytkownik może przedłużyć limit czasu co najmniej dziesięć razy; lub</li>
+                            <li><strong>Wyjątek czasu rzeczywistego:</strong> Limit czasu jest wymaganą częścią wydarzenia w czasie rzeczywistym (np. aukcji) i nie jest możliwa żadna alternatywa dla limitu czasu; lub</li>
+                            <li><strong>Wyjątek istotności:</strong> Limit czasu jest niezbędny, a jego przedłużenie unieważniłoby działanie; lub</li>
+                            <li><strong>Wyjątek 20 godzin:</strong> Limit czasu jest dłuższy niż 20 godzin.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.2.2.1 Regulacja czasu</legend>
+                <div><label><input type="radio" name="res-c11-2-2-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-2-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-2-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-2-2-1">Uwagi:</label><textarea id="notes-c11-2-2-1"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h5>C.11.2.2.2 Pauza, zatrzymanie, ukrycie <span class="poziom poziom-a">A</span></h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Dla informacji ruchomych, migających, przewijających się lub automatycznie aktualizujących się, sprawdź, czy spełnione są wszystkie poniższe warunki:
+                        <ul>
+                            <li><strong>Ruchome, migające, przewijające się:</strong> Dla wszelkich informacji ruchomych, migających lub przewijających się, które (1) uruchamiają się automatycznie, (2) trwają dłużej niż pięć sekund i (3) są prezentowane równolegle z inną treścią, istnieje mechanizm pozwalający użytkownikowi na ich wstrzymanie, zatrzymanie lub ukrycie, chyba że ruch, miganie lub przewijanie jest częścią działania, w którym jest to niezbędne; oraz</li>
+                            <li><strong>Automatycznie aktualizujące się:</strong> Dla wszelkich informacji automatycznie aktualizujących się, które (1) uruchamiają się automatycznie i (2) są prezentowane równolegle z inną treścią, istnieje mechanizm pozwalający użytkownikowi na ich wstrzymanie, zatrzymanie, ukrycie lub kontrolowanie częstotliwości aktualizacji, chyba że automatyczna aktualizacja jest częścią działania, w którym jest to niezbędne.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.2.2.2 Pauza, zatrzymanie, ukrycie</legend>
+                <div><label><input type="radio" name="res-c11-2-2-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-2-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-2-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-2-2-2">Uwagi:</label><textarea id="notes-c11-2-2-2"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h4>C.11.2.3 Ataki padaczki i reakcje fizyczne</h4>
+        
+        <h5>C.11.2.3.1 Trzy błyski lub poniżej progu <span class="poziom poziom-a">A</span></h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie zawiera niczego, co miga więcej niż trzy razy w ciągu jednej sekundy, lub czy błysk jest poniżej ogólnych progów błysku i czerwonego błysku.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.2.3.1 Trzy błyski lub poniżej progu</legend>
+                <div><label><input type="radio" name="res-c11-2-3-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-3-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-3-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-2-3-1">Uwagi:</label><textarea id="notes-c11-2-3-1"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h4>C.11.2.4 Możliwość nawigacji</h4>
+        
+        <h5>C.11.2.4.3 Kolejność fokusu <span class="poziom poziom-a">A</span></h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy jeśli oprogramowanie może być nawigowane sekwencyjnie, a sekwencje nawigacji wpływają na znaczenie lub działanie, komponenty, na których można ustawić fokus, otrzymują go w kolejności, która zachowuje znaczenie i operacyjność.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.2.4.3 Kolejność fokusu</legend>
+                <div><label><input type="radio" name="res-c11-2-4-3" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-4-3" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-4-3" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-2-4-3">Uwagi:</label><textarea id="notes-c11-2-4-3"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h5>C.11.2.4.4 Cel odnośnika (w kontekście) <span class="poziom poziom-a">A</span></h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 2.4.4</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.2.4.4 Cel odnośnika (w kontekście)</legend>
+                <div><label><input type="radio" name="res-c11-2-4-4" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-4-4" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-4-4" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony lub oprogramowanie nie zawiera treści istotnych dla KS WCAG 2.1 2.4.4.</label></div>
+                <div class="test-notes"><label for="notes-c11-2-4-4">Uwagi:</label><textarea id="notes-c11-2-4-4"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h5>C.11.2.4.6 Nagłówki i etykiety <span class="poziom poziom-aa">AA</span></h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 2.4.6</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.2.4.6 Nagłówki i etykiety</legend>
+                <div><label><input type="radio" name="res-c11-2-4-6" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-4-6" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-4-6" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony lub oprogramowanie nie zawiera treści istotnych dla KS WCAG 2.1 2.4.6.</label></div>
+                <div class="test-notes"><label for="notes-c11-2-4-6">Uwagi:</label><textarea id="notes-c11-2-4-6"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h5>C.11.2.4.7 Widoczny fokus <span class="poziom poziom-aa">AA</span></h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 2.4.7</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.2.4.7 Widoczny fokus</legend>
+                <div><label><input type="radio" name="res-c11-2-4-7" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-4-7" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-4-7" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony lub oprogramowanie nie zawiera treści istotnych dla KS WCAG 2.1 2.4.7.</label></div>
+                <div class="test-notes"><label for="notes-c11-2-4-7">Uwagi:</label><textarea id="notes-c11-2-4-7"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h4>C.11.2.5 Modalności wejścia</h4>
+        
+        <h5>C.11.2.5.1 Gesty wskazujące <span class="poziom poziom-a">A</span></h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Oprogramowanie wspiera co najmniej jedną technologię asystującą.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy cała funkcjonalność, która do działania wykorzystuje gesty wielopunktowe lub oparte na ścieżce, może być obsługiwana za pomocą pojedynczego wskaźnika bez gestu opartego na ścieżce, chyba że gest wielopunktowy lub oparty na ścieżce jest niezbędny.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.2.5.1 Gesty wskazujące</legend>
+                <div><label><input type="radio" name="res-c11-2-5-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-5-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-5-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-2-5-1">Uwagi:</label><textarea id="notes-c11-2-5-1"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h5>C.11.2.5.2 Anulowanie wskazania <span class="poziom poziom-a">A</span></h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Oprogramowanie wspiera co najmniej jedną technologię asystującą.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Dla funkcjonalności, którą można obsługiwać za pomocą pojedynczego wskaźnika, sprawdź, czy spełniony jest co najmniej jeden z poniższych warunków:
+                        <ul>
+                            <li><strong>Brak zdarzenia w dół:</strong> Zdarzenie "w dół" wskaźnika nie jest używane do wykonania żadnej części funkcji.</li>
+                            <li><strong>Przerwij lub cofnij:</strong> Zakończenie funkcji następuje po zdarzeniu "w górę", a dostępny jest mechanizm do przerwania funkcji przed jej zakończeniem lub do cofnięcia funkcji po jej zakończeniu.</li>
+                            <li><strong>Odwrócenie w górę:</strong> Zdarzenie "w górę" odwraca każdy wynik poprzedniego zdarzenia "w dół".</li>
+                            <li><strong>Niezbędne:</strong> Zakończenie funkcji po zdarzeniu "w dół" jest niezbędne.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.2.5.2 Anulowanie wskazania</legend>
+                <div><label><input type="radio" name="res-c11-2-5-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-5-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-5-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-2-5-2">Uwagi:</label><textarea id="notes-c11-2-5-2"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h5>C.11.2.5.3 Etykieta w nazwie</h5>
+        
+        <h6>C.11.2.5.3.1 Etykieta w nazwie (funkcjonalność otwarta) <span class="poziom poziom-a">A</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Oprogramowanie wspiera co najmniej jedną technologię asystującą.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/label-in-name.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 2.5.3</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.2.5.3.1 Etykieta w nazwie (funkcjonalność otwarta)</legend>
+                <div><label><input type="radio" name="res-c11-2-5-3-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-5-3-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-5-3-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony, lub oprogramowanie nie zawiera treści istotnych dla KS WCAG 2.1 2.5.3.</label></div>
+                <div class="test-notes"><label for="notes-c11-2-5-3-1">Uwagi:</label><textarea id="notes-c11-2-5-3-1"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h6>C.11.2.5.3.2 Etykieta w nazwie (funkcjonalność zamknięta)</h6>
+        <div class="audit-item informative">
+            <p>Klauzula 11.2.5.3.2 ma charakter wyłącznie informacyjny i nie zawiera wymagań do testowania.</p>
+        </div>
+
+        <h6>C.11.2.5.4 Uruchamianie przez ruch <span class="poziom poziom-a">A</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Oprogramowanie wspiera co najmniej jedną technologię asystującą.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 2.5.4</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.2.5.4 Uruchamianie przez ruch</legend>
+                <div><label><input type="radio" name="res-c11-2-5-4" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-5-4" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-2-5-4" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony, lub oprogramowanie nie zawiera treści istotnych dla KS WCAG 2.1 2.5.4.</label></div>
+                <div class="test-notes"><label for="notes-c11-2-5-4">Uwagi:</label><textarea id="notes-c11-2-5-4"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h3>C.11.3 Zrozumiałość</h3>
+        
+        <h4>C.11.3.1 Czytelność</h4>
+        <h5>C.11.3.1.1 Język oprogramowania</h5>
+        
+        <h6>C.11.3.1.1.1 Język oprogramowania (funkcjonalność otwarta) <span class="poziom poziom-a">A</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Oprogramowanie zapewnia wsparcie dla technologii asystujących do odczytu ekranu.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy domyślny język naturalny oprogramowania może być określony programowo.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.3.1.1.1 Język oprogramowania (funkcjonalność otwarta)</legend>
+                <div><label><input type="radio" name="res-c11-3-1-1-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-3-1-1-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-3-1-1-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-3-1-1-1">Uwagi:</label><textarea id="notes-c11-3-1-1-1"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h6>C.11.3.1.1.2 Język oprogramowania (funkcjonalność zamknięta) <span class="poziom poziom-a">A</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Testing</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Interfejs użytkownika jest zamknięty dla technologii asystujących do odczytu ekranu.</li>
+                    <li>Wyjście mowy jest zapewnione jako niewizualny dostęp do zamkniętej funkcjonalności.</li>
+                    <li>Wyjście mowy nie dotyczy nazw własnych, terminów technicznych, słów o nieokreślonym języku, ani słów lub fraz, które stały się częścią języka potocznego bezpośrednio otaczającego tekstu.</li>
+                    <li>Treść nie jest generowana zewnętrznie i jest pod kontrolą dostawcy TIK.</li>
+                    <li>Wyświetlane języki można wybrać za pomocą dostępu niewizualnego.</li>
+                    <li>Użytkownik nie wybrał języka mowy innego niż język wyświetlanej treści.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy wyjście mowy jest w tym samym języku co wyświetlana treść.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.3.1.1.2 Język oprogramowania (funkcjonalność zamknięta)</legend>
+                <div><label><input type="radio" name="res-c11-3-1-1-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-3-1-1-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-3-1-1-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-3-1-1-2">Uwagi:</label><textarea id="notes-c11-3-1-1-2"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h4>C.11.3.2 Przewidywalność</h4>
+        
+        <h5>C.11.3.2.1 Przy fokusie <span class="poziom poziom-a">A</span></h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/on-focus.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 3.2.1</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.3.2.1 Przy fokusie</legend>
+                <div><label><input type="radio" name="res-c11-3-2-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-3-2-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-3-2-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-3-2-1">Uwagi:</label><textarea id="notes-c11-3-2-1"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h5>C.11.3.2.2 Przy wprowadzaniu danych <span class="poziom poziom-a">A</span></h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/on-input.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 3.2.2</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.3.2.2 Przy wprowadzaniu danych</legend>
+                <div><label><input type="radio" name="res-c11-3-2-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-3-2-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-3-2-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-3-2-2">Uwagi:</label><textarea id="notes-c11-3-2-2"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h4>C.11.3.3 Pomoc przy wprowadzaniu danych</h4>
+        <h5>C.11.3.3.1 Identyfikacja błędu</h5>
+        
+        <h6>C.11.3.3.1.1 Identyfikacja błędu (funkcjonalność otwarta) <span class="poziom poziom-a">A</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Oprogramowanie zapewnia wsparcie dla technologii asystujących do odczytu ekranu.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 3.3.1</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.3.3.1.1 Identyfikacja błędu (funkcjonalność otwarta)</legend>
+                <div><label><input type="radio" name="res-c11-3-3-1-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-3-3-1-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-3-3-1-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony, lub oprogramowanie nie zawiera treści istotnych dla KS WCAG 2.1 3.3.1.</label></div>
+                <div class="test-notes"><label for="notes-c11-3-3-1-1">Uwagi:</label><textarea id="notes-c11-3-3-1-1"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h6>C.11.3.3.1.2 Identyfikacja błędu (funkcjonalność zamknięta) <span class="poziom poziom-a">A</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Testing</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Interfejs użytkownika jest zamknięty dla technologii asystujących do odczytu ekranu.</li>
+                    <li>Błąd wprowadzania danych jest automatycznie wykrywany.</li>
+                    <li>Wyjście mowy jest zapewnione jako niewizualny dostęp do zamkniętej funkcjonalności.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol>
+                    <li>Sprawdź, czy błąd jest identyfikowany za pomocą wyjścia mowy.</li>
+                    <li>Sprawdź, czy sugestie dotyczące poprawy są dostarczane za pomocą wyjścia mowy.</li>
+                </ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.3.3.1.2 Identyfikacja błędu (funkcjonalność zamknięta)</legend>
+                <div><label><input type="radio" name="res-c11-3-3-1-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenia 1 i 2 są prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-3-3-1-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 lub 2 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-3-3-1-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1, 2, 3 lub 4 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-3-3-1-2">Uwagi:</label><textarea id="notes-c11-3-3-1-2"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h5>C.11.3.3.2 Etykiety lub instrukcje <span class="poziom poziom-a">A</span></h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 3.3.2</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.3.3.2 Etykiety lub instrukcje</legend>
+                <div><label><input type="radio" name="res-c11-3-3-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-3-3-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-3-3-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony lub oprogramowanie nie zawiera treści istotnych dla KS WCAG 2.1 3.3.2.</label></div>
+                <div class="test-notes"><label for="notes-c11-3-3-2">Uwagi:</label><textarea id="notes-c11-3-3-2"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h5>C.11.3.3.3 Sugestie dotyczące błędów <span class="poziom poziom-aa">AA</span></h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 3.3.3</a>.</li></ol>
+            </div>
+           <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.3.3.3 Sugestie dotyczące błędów</legend>
+                <div><label><input type="radio" name="res-c11-3-3-3" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-3-3-3" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-3-3-3" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony lub oprogramowanie nie zawiera treści istotnych dla KS WCAG 2.1 3.3.3.</label></div>
+                <div class="test-notes"><label for="notes-c11-3-3-3">Uwagi:</label><textarea id="notes-c11-3-3-3"></textarea></div>
+           </fieldset>
+        </div>
+        
+        <h5>C.11.3.3.4 Zapobieganie błędom (prawne, finansowe, dane) <span class="poziom poziom-aa">AA</span></h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Dla oprogramowania, które powoduje zobowiązania prawne lub transakcje finansowe, modyfikuje lub usuwa dane kontrolowane przez użytkownika, lub przesyła odpowiedzi testowe, sprawdź, czy spełniony jest co najmniej jeden z poniższych warunków:
+                        <ul>
+                            <li><strong>Odwracalne:</strong> Przesłane dane są odwracalne.</li>
+                            <li><strong>Sprawdzone:</strong> Dane wprowadzone przez użytkownika są sprawdzane pod kątem błędów wejściowych, a użytkownik ma możliwość ich poprawienia.</li>
+                            <li><strong>Potwierdzone:</strong> Dostępny jest mechanizm do przeglądania, potwierdzania i poprawiania informacji przed sfinalizowaniem przesłania.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.3.3.4 Zapobieganie błędom (prawne, finansowe, dane)</legend>
+                <div><label><input type="radio" name="res-c11-3-3-4" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-3-3-4" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-3-3-4" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-3-3-4">Uwagi:</label><textarea id="notes-c11-3-3-4"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h3>C.11.4 Solidność (Robust)</h3>
+        
+        <h4>C.11.4.1 Kompatybilność</h4>
+        <h5>C.11.4.1.1 Parsowanie</h5>
+        
+        <h6>C.11.4.1.1.1 Parsowanie (funkcjonalność otwarta) <span class="poziom poziom-a">A</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Oprogramowanie wspiera co najmniej jedną technologię asystującą.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Dla oprogramowania, które używa języków znaczników w taki sposób, że znaczniki są oddzielnie eksponowane i dostępne dla technologii wspomagających, sprawdź, czy elementy mają kompletne znaczniki początkowe i końcowe, są zagnieżdżone zgodnie ze specyfikacjami, nie zawierają zduplikowanych atrybutów, a wszelkie identyfikatory są unikalne.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.4.1.1.1 Parsowanie (funkcjonalność otwarta)</legend>
+                <div><label><input type="radio" name="res-c11-4-1-1-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-4-1-1-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-4-1-1-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-4-1-1-1">Uwagi:</label><textarea id="notes-c11-4-1-1-1"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h6>C.11.4.1.1.2 Parsowanie (funkcjonalność zamknięta)</h6>
+        <div class="audit-item informative">
+            <p>Klauzula 11.4.1.1.2 nie zawiera wymagań do testowania.</p>
+        </div>
+
+        <h5>C.11.4.1.2 Nazwa, rola, wartość</h5>
+        
+        <h6>C.11.4.1.2.1 Nazwa, rola, wartość (funkcjonalność otwarta) <span class="poziom poziom-a">A</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Oprogramowanie wspiera co najmniej jedną technologię asystującą.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Dla wszystkich komponentów interfejsu użytkownika, sprawdź, czy nazwa i rola mogą być określone programowo; stany, właściwości i wartości, które mogą być ustawiane przez użytkownika, mogą być ustawiane programowo; a powiadomienia o zmianach tych elementów są dostępne dla agentów użytkownika, w tym technologii wspomagających.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.4.1.2.1 Nazwa, rola, wartość (funkcjonalność otwarta)</legend>
+                <div><label><input type="radio" name="res-c11-4-1-2-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-4-1-2-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-4-1-2-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-4-1-2-1">Uwagi:</label><textarea id="notes-c11-4-1-2-1"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h6>C.11.4.1.2.2 Nazwa, rola, wartość (funkcjonalność zamknięta)</h6>
+        <div class="audit-item informative">
+            <p>Klauzula 11.4.1.2.2 nie zawiera wymagań do testowania.</p>
+        </div>
+
+        <h5>C.11.4.1.3 Komunikaty o stanie</h5>
+        
+        <h6>C.11.4.1.3.1 Komunikaty o stanie (funkcjonalność otwarta) <span class="poziom poziom-a">A</span></h6>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>TIK to oprogramowanie inne niż internetowe, które udostępnia interfejs użytkownika.</li>
+                    <li>Oprogramowanie zapewnia wsparcie dla technologii asystujących do odczytu ekranu.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie nie narusza <a href="https://www.w3.org/WAI/WCAG21/Understanding/status-messages.html" target="_blank" rel="noopener noreferrer">KS WCAG 2.1 4.1.3</a>.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.4.1.3.1 Komunikaty o stanie (funkcjonalność otwarta)</legend>
+                <div><label><input type="radio" name="res-c11-4-1-3-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-4-1-3-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-4-1-3-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony, lub oprogramowanie nie zawiera treści istotnych dla KS WCAG 2.1 4.1.3.</label></div>
+                <div class="test-notes"><label for="notes-c11-4-1-3-1">Uwagi:</label><textarea id="notes-c11-4-1-3-1"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h6>C.11.4.1.3.2 Komunikaty o stanie (funkcjonalność zamknięta)</h6>
+        <div class="audit-item informative">
+            <p>Klauzula 11.4.1.3.2 nie zawiera wymagań do testowania.</p>
+        </div>
+
+        <h3>C.11.5 Interoperacyjność z technologią asystującą</h3>
+        
+        <h4>C.11.5.1 Funkcjonalność zamknięta</h4>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>Oprogramowanie ma zamkniętą funkcjonalność.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy zamknięta funkcjonalność jest zgodna z klauzulą 5.1.</li></ol>
+                <p><strong>Informacja:</strong> Jeśli sprawdzenie 1 jest prawdziwe, oprogramowanie nie musi być zgodne z klauzulą 11.5.2. Jeśli jest fałszywe, musi być zgodne z 11.5.2.</p>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.5.1 Funkcjonalność zamknięta</legend>
+                <div><label><input type="radio" name="res-c11-5-1" value="pass"> <strong>Zgodne (przechodzi do 11.5.2)</strong></label></div>
+                <div><label><input type="radio" name="res-c11-5-1" value="fail"> <strong>Niezgodne</strong></label></div>
+                <div><label><input type="radio" name="res-c11-5-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-5-1">Uwagi:</label><textarea id="notes-c11-5-1"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h4>C.11.5.2 Usługi dostępności</h4>
+        
+        <h5>C.11.5.2.1-4 Wsparcie usług dostępności platformy</h5>
+        <div class="audit-item informative">
+            <p>Testy C.11.5.2.1, C.11.5.2.2, C.11.5.2.3 i C.11.5.2.4 dotyczą dokumentacji platformy i tego, jak oprogramowanie (w tym AT) z niej korzysta. Wymagają inspekcji dokumentacji i kodu.</p>
+        </div>
+        
+        <h5>C.11.5.2.5 Informacje o obiekcie</h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>Oceniane oprogramowanie udostępnia interfejs użytkownika.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol>
+                    <li>Sprawdź, czy rola elementu interfejsu użytkownika jest programowo determinowalna przez AT.</li>
+                    <li>Sprawdź, czy stan(y) elementu interfejsu użytkownika są programowo determinowalne przez AT.</li>
+                    <li>Sprawdź, czy granice elementu interfejsu użytkownika są programowo determinowalne przez AT.</li>
+                    <li>Sprawdź, czy nazwa elementu interfejsu użytkownika jest programowo determinowalna przez AT.</li>
+                    <li>Sprawdź, czy opis elementu interfejsu użytkownika jest programowo determinowalny przez AT.</li>
+                </ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.5.2.5 Informacje o obiekcie</legend>
+                <div><label><input type="radio" name="res-c11-5-2-5" value="pass"> <strong>Zaliczone:</strong> Wszystkie sprawdzenia (1-5) są prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-5-2-5" value="fail"> <strong>Niezaliczone:</strong> Którekolwiek ze sprawdzeń (1-5) jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-5-2-5" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-5-2-5">Uwagi:</label><textarea id="notes-c11-5-2-5"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h5>C.11.5.2.6 Wiersz, kolumna i nagłówki</h5>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>Oceniane oprogramowanie udostępnia interfejs użytkownika.</li>
+                    <li>W interfejsie użytkownika znajdują się tabele danych.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol>
+                    <li>Sprawdź, czy wiersz każdej komórki jest programowo determinowalny przez AT.</li>
+                    <li>Sprawdź, czy kolumna każdej komórki jest programowo determinowalna przez AT.</li>
+                    <li>Sprawdź, czy nagłówek wiersza każdej komórki (jeśli istnieje) jest programowo determinowalny przez AT.</li>
+                    <li>Sprawdź, czy nagłówek kolumny każdej komórki (jeśli istnieje) jest programowo determinowalny przez AT.</li>
+                </ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.5.2.6 Wiersz, kolumna i nagłówki</legend>
+                <div><label><input type="radio" name="res-c11-5-2-6" value="pass"> <strong>Zaliczone:</strong> Wszystkie sprawdzenia (2-5) są prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-5-2-6" value="fail"> <strong>Niezaliczone:</strong> Którekolwiek ze sprawdzeń (2-5) jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-5-2-6" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-5-2-6">Uwagi:</label><textarea id="notes-c11-5-2-6"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h3>C.11.6 Udokumentowana dostępność</h3>
+        
+        <h4>C.11.6.1 Kontrola użytkownika nad funkcjami dostępności</h4>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Testing</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>Istnieją funkcje platformy zdefiniowane w jej dokumentacji jako funkcje dostępności przeznaczone dla użytkowników.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy istnieją wystarczające tryby działania, w których możliwa jest kontrola użytkownika nad funkcjami dostępności platformy.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.6.1 Kontrola użytkownika nad funkcjami dostępności</legend>
+                <div><label><input type="radio" name="res-c11-6-1" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-6-1" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-6-1" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-6-1">Uwagi:</label><textarea id="notes-c11-6-1"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h4>C.11.6.2 Brak zakłócania funkcji dostępności</h4>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Testing</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>Istnieją funkcje platformy zdefiniowane w jej dokumentacji jako funkcje dostępności.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol>
+                    <li>Sprawdź, czy oprogramowanie z interfejsem użytkownika zakłóca normalne działanie funkcji dostępności platformy.</li>
+                    <li>Sprawdź, czy zakłócenie zostało wyraźnie zażądane lub potwierdzone przez użytkownika.</li>
+                </ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.6.2 Brak zakłócania funkcji dostępności</legend>
+                <div><label><input type="radio" name="res-c11-6-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest fałszywe LUB oba sprawdzenia są prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-6-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest prawdziwe, a 2 fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-6-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-6-2">Uwagi:</label><textarea id="notes-c11-6-2"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h3>C.11.7 Preferencje użytkownika</h3>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection and Testing</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>Oprogramowanie udostępnia interfejs użytkownika.</li>
+                    <li>Oprogramowanie ma ustawienia języka, koloru, kontrastu, typu czcionki, rozmiaru czcionki lub kursora fokusu, które odpowiadają ustawieniom platformy.</li>
+                    <li>Oprogramowanie nie jest zaprojektowane do izolacji od swojej platformy bazowej.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy oprogramowanie zapewnia tryb działania, który respektuje ustawienia platformy.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.7 Preferencje użytkownika</legend>
+                <div><label><input type="radio" name="res-c11-7" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-7" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-7" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1, 2 lub 3 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-7">Uwagi:</label><textarea id="notes-c11-7"></textarea></div>
+            </fieldset>
+        </div>
+
+        <h3>C.11.8 Narzędzia autorskie</h3>
+        
+        <h4>C.11.8.2 Tworzenie dostępnych treści</h4>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection and Testing</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol><li>Oprogramowanie jest narzędziem autorskim.</li></ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Sprawdź, czy narzędzie autorskie ma funkcje, które umożliwiają i wspierają tworzenie treści zgodnych z klauzulami 9 (Web) i 10 (Dokumenty).</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.8.2 Tworzenie dostępnych treści</legend>
+                <div><label><input type="radio" name="res-c11-8-2" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-8-2" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-8-2" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-8-2">Uwagi:</label><textarea id="notes-c11-8-2"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h4>C.11.8.3 Zachowanie informacji o dostępności przy transformacjach</h4>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection and Testing</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>Oprogramowanie jest narzędziem autorskim.</li>
+                    <li>Narzędzie autorskie przeprowadza transformacje restrukturyzacyjne lub re-kodujące.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol>
+                    <li>Dla transformacji restrukturyzacyjnej, sprawdź, czy informacja o dostępności jest zachowywana w wyniku.</li>
+                    <li>Dla transformacji restrukturyzacyjnej, sprawdź, czy technologia treści wspiera informację o dostępności dla restrukturyzowanej formy informacji.</li>
+                    <li>Dla transformacji re-kodującej, sprawdź, czy informacja o dostępności jest zachowywana w wyniku.</li>
+                    <li>Dla transformacji re-kodującej, sprawdź, czy informacja o dostępności jest wspierana przez technologię re-kodowanego wyniku.</li>
+                </ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.8.3 Zachowanie informacji o dostępności przy transformacjach</legend>
+                <div><label><input type="radio" name="res-c11-8-3" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe LUB (1 i 2 są fałszywe) LUB sprawdzenie 3 jest prawdziwe LUB (3 i 4 są fałszywe).</label></div>
+                <div><label><input type="radio" name="res-c11-8-3" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe, a 2 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-8-3" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-8-3">Uwagi:</label><textarea id="notes-c11-8-3"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h4>C.11.8.4 Pomoc w naprawie</h4>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>Oprogramowanie jest narzędziem autorskim.</li>
+                    <li>Funkcjonalność sprawdzania dostępności narzędzia autorskiego może wykryć, że treść nie spełnia wymagań klauzul 9 (Web) lub 10 (Dokumenty).</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol><li>Narzędzie autorskie dostarcza sugestie naprawcze, gdy treść nie spełnia wymagań klauzul 9 lub 10.</li></ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.8.4 Pomoc w naprawie</legend>
+                <div><label><input type="radio" name="res-c11-8-4" value="pass"> <strong>Zaliczone:</strong> Sprawdzenie 1 jest prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-8-4" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-8-4" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-8-4">Uwagi:</label><textarea id="notes-c11-8-4"></textarea></div>
+            </fieldset>
+        </div>
+        
+        <h4>C.11.8.5 Szablony</h4>
+        <div class="audit-item">
+            <div class="test-details">
+                <p><strong>Typ oceny:</strong> Inspection</p>
+                <p><strong>Warunki wstępne:</strong></p>
+                <ol>
+                    <li>Oprogramowanie jest narzędziem autorskim.</li>
+                    <li>Narzędzie autorskie dostarcza szablony.</li>
+                </ol>
+                <p><strong>Procedura:</strong></p>
+                <ol>
+                    <li>Sprawdź, czy narzędzie autorskie dostarcza co najmniej jeden szablon, który wspiera tworzenie treści zgodnych z wymaganiami klauzul 9 (Web) lub 10 (Dokumenty).</li>
+                    <li>Sprawdź, czy co najmniej jeden zidentyfikowany szablon jest dostępny i oznaczony jako zgodny z klauzulami 9 lub 10.</li>
+                </ol>
+            </div>
+            <fieldset class="test-result-user">
+                <legend>Wybierz wynik dla C.11.8.5 Szablony</legend>
+                <div><label><input type="radio" name="res-c11-8-5" value="pass"> <strong>Zaliczone:</strong> Sprawdzenia 1 i 2 są prawdziwe.</label></div>
+                <div><label><input type="radio" name="res-c11-8-5" value="fail"> <strong>Niezaliczone:</strong> Sprawdzenie 1 lub 2 jest fałszywe.</label></div>
+                <div><label><input type="radio" name="res-c11-8-5" value="na"> <strong>Nie dotyczy:</strong> Warunek wstępny 1 lub 2 nie jest spełniony.</label></div>
+                <div class="test-notes"><label for="notes-c11-8-5">Uwagi:</label><textarea id="notes-c11-8-5"></textarea></div>
+            </fieldset>
+        </div>
+
+    </section>
