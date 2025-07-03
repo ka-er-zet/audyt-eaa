@@ -20,6 +20,7 @@ Udostępniam je na licencji Creative Commons, licząc na to, że stanie się zal
 
 - Jak już wspomniałem – to bardzo wczesna wersja, coś może nie działać jak powinno.
 - Tłumaczenie jest tłumaczeniem maszynowym (Gemini 2.5 Pro), więc nie należy go traktować jako oficjalnego.
+- Język normy jest jaki jest, czyli delikatnie mówiąc hermetyczny i pewnie warto by nad nim popracować.
 - Starałem się weryfikować pracę AI, ale przy tej objętości tekstu i strukturze coś mogło umknąć mojej uwadze – krótko mówiąc, mogą pojawiać się błędy, przeinaczenia w stosunku do treści EN 301 549, dlatego warto konsultować się z pełną treścią normy.
 
 ## Co dalej?
