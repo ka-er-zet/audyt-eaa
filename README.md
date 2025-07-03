@@ -1,2 +1,45 @@
-# audyt-eaa
-Narzędzie wspomagające audytu zgodności z normą EN 301 549
+# Narzędzie wspomagające audyt zgodności z normą EN 301 549
+
+Jest to **wczesna wersja narzędzia** mającego pomóc w audycie produktów i usług pod kątem ich zgodności z normą EN 301 549.
+
+Starałem się odwzorować w nim strukturę i testy z aneksu C wspomnianej normy. Mam nadzieję, że się to udało.  
+Udostępniam je na licencji Creative Commons, licząc na to, że stanie się zalążkiem czegoś przydatnego.
+
+## Co narzędzie potrafi?
+
+- Można w nim wybrać jedną lub więcej klauzul do wykonania badania.
+- Można ocenić zgodność produktu/usługi z założeniami każdego z testów i dodać notatkę.
+- Narzędzie podsumowuje wyniki testowania i generuje wynik oparty o prostą punktację:
+  - **Test zaliczony:** `1 punkt`
+  - **Test niezaliczony:** `-1 punkt`
+  - **Nie dotyczy/nie testowalne:** `0 punktów`
+- Wyniki badania można wyeksportować do plików w formatach **JSON, ODT i CSV**.
+- Narzędzie działa także jako **PWA** (Progressive Web App).
+
+## Co warto mieć na uwadze?
+
+- Jak już wspomniałem – to bardzo wczesna wersja, coś może nie działać jak powinno.
+- Tłumaczenie jest tłumaczeniem maszynowym (Gemini 2.5 Pro), więc nie należy go traktować jako oficjalnego.
+- Starałem się weryfikować pracę AI, ale przy tej objętości tekstu i strukturze coś mogło umknąć mojej uwadze – krótko mówiąc, mogą pojawiać się błędy, przeinaczenia w stosunku do treści EN 301 549, dlatego warto konsultować się z pełną treścią normy.
+
+## Co dalej?
+
+Super by było, jakby narzędzie zaczęło żyć, dlatego:
+
+- Jeśli widzisz jakiś błąd, nie bój się do mnie odezwać (kontakt poniżej) albo kontrybuować do tego repozytorium.
+- Czegoś Ci brakuje? Jak wyżej...
+- Masz pomysł na funkcjonalność? Jak wyżej...
+
+Chciałbym jeszcze umożliwić szybki dostęp do opisów klauzul i wymagań, tak by przy prowadzeniu testów nie trzeba było „skakać” pomiędzy narzędziem a treścią normy. To też pewnie będzie wymagało przejścia na inną strukturę całości, tak by łatwiej edytować treści. Wstępny pomysł to statyczna strona oparta np. o **HUGO**.  
+Więc jak to mawiają „stay tuned”, bo są przewidywane zmiany.
+
+No i daj znać, jeśli na coś Ci się to przydało!
+
+---
+
+**Kontakt:** [Marcin Krzanicki na LinkedIn](https://www.linkedin.com/in/marcinkrzanicki/) _(otwiera się w nowym oknie)_.
+
+---
+
+**Licencja:**  
+Narzędzie objęte jest licencją [Creative Commons Uznanie autorstwa – Na tych samych warunkach 4.0 Międzynarodowa (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.pl) _(otwiera się w nowym oknie)_.
