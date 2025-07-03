@@ -30,7 +30,7 @@ Super by było, jakby narzędzie zaczęło żyć, dlatego:
 - Czegoś Ci brakuje? Jak wyżej...
 - Masz pomysł na funkcjonalność? Jak wyżej...
 
-Chciałbym jeszcze umożliwić szybki dostęp do opisów klauzul i wymagań, tak by przy prowadzeniu testów nie trzeba było „skakać” pomiędzy narzędziem a treścią normy. To też pewnie będzie wymagało przejścia na inną strukturę całości, tak by łatwiej edytować treści. Wstępny pomysł to statyczna strona oparta np. o **HUGO**.  
+Jak patrzę na szereg opisów testów, dobrze by było zrobić formularze "sprytniejszymi". Np. nie jest spełniony warunek wstępny - niech ustawi się od razu odpowiednia odpowiedź, itd. Chciałbym też umożliwić korzystającym szybki dostęp do opisów klauzul i wymagań, tak by przy prowadzeniu testów nie trzeba było „skakać” pomiędzy narzędziem a treścią normy. To też pewnie będzie wymagało przejścia na inną strukturę całości, tak by łatwiej edytować treści. Wstępny pomysł to statyczna strona oparta np. o **HUGO**.  
 Więc jak to mawiają „stay tuned”, bo są przewidywane zmiany.
 
 No i daj znać, jeśli na coś Ci się to przydało!
