@@ -44,3 +44,7 @@ No i daj znać, jeśli na coś Ci się to przydało!
 
 **Licencja:**  
 Narzędzie objęte jest licencją [Creative Commons Uznanie autorstwa – Na tych samych warunkach 4.0 Międzynarodowa (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.pl)
+
+---
+**Narzędzie**
+[Narzędzie wspomagające audytu zgodności z EN 301 549](https://ka-er-zet.github.io/audyt-eaa/)
