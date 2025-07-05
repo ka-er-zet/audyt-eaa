@@ -7,8 +7,15 @@ Udostępniam je na licencji Creative Commons, licząc na to, że stanie się zal
 
 ## Jak korzystać z narzędzia?
 
-1. Pobierz archiwum .zip z kodem klikając powyżej w "Code", a następnie "Download Zip".
-2. Rozpakuj archiwum .zip i wejdź do rozpakowanego folderu.
+### Wersja online
+
+Narzędzie znajdziesz na Github Pages pod tym linkiem:
+[Narzędzie wspomagające audytu zgodności z EN 301 549](https://ka-er-zet.github.io/audyt-eaa/)
+
+### Wersja offline
+
+1. Możesz pobrać archiwum .zip z kodem klikając powyżej w "Code", a następnie "Download Zip".
+2. Następnie rozpakuj archiwum .zip i wejdź do rozpakowanego folderu.
 3. Kliknij otwórz plik `index.html` za pomocą ulubionej przeglądarki.
 
 ## Co narzędzie potrafi?
